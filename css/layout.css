@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import url("./reset.css");
+@import url("./common.css");
+
+/* 메인 비주얼 */
+.sec0 {
+  margin-top: 120px;
+}
+.main_visual {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: #bad4ff;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-radius: 8px;
+}
+.left_text {
+  /* background-color: beige; */
+  position: absolute;
+  top: 138px;
+  left: 143px;
+}
+.left_text h2 {
+  font-size: 48 px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+.left_text p {
+  font-size: var(--md-font-size);
+  font-weight: 700;
+  margin-top: 20px;
+  color: var(--main-color);
+}
+.right_image {
+  position: relative;
+  right: -830px;
+}
+.right_image img:last-child {
+  position: absolute;
+  right: -129px;
+  top: 20px;
+}
+/* 섹션 1 */
+.sec1 {
+  width: 100%;
+  height: 100%;
+}
+.menu_box_wrap {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  padding-top: 60px;
+  gap: 20px;
+}
+.box_con {
+  width: 305px;
+  height: 312px;
+  border: 1px solid #d9d9d9;
+  padding: 40px 0;
+  box-sizing: border-box;
+  border-radius: 14px;
+  text-align: center;
+  cursor: pointer;
+}
+.text_wrap h3 {
+  font-size: var(--md-font-size);
+  font-weight: 700;
+}
+.text_wrap p {
+  font-size: var(--sm-font-size);
+  font-weight: 600;
+  color: #777;
+  padding-top: 10px;
+}
+.box_con:nth-of-type(1) img {
+  padding-top: 50px;
+}
+.box_con:nth-of-type(2) img {
+  padding-top: 40px;
+}
+.box_con:nth-of-type(3) img {
+  padding-top: 38px;
+}
+.box_con:nth-of-type(4) img {
+  padding-top: 50px;
+}
+/* sec2 */
+.sec2 {
+  width: 100%;
+  height: 840px;
+  padding: 126px 0;
+  margin-top: 160px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: rgba(115, 168, 255, 5%);
+}
+.sec2 h2 {
+  margin-bottom: 100px;
+}
+.sec2_box_wrap {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+.sec2_box {
+  width: 414px;
+  height: 440px;
+  background-color: #fff;
+  border: 1px solid #eff5ff;
+  border-radius: 22px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 0;
+}
+.sec2_box div {
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  overflow: hidden;
+  background-color: #e6effe;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.sec2_box h3 {
+  font-size: var(--lg-font-size);
+  font-weight: 600;
+}
+.sec2_box_wrap > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* sec3 */
+.sec3 {
+  width: 100%;
+  height: auto;
+  padding: 240px 0;
+  box-sizing: border-box;
+}
+.full_con {
+  width: 1064px;
+  height: auto;
+  margin: 0 auto;
+}
+.full_con > p {
+  font-size: var(--lg-font-size);
+  font-weight: 600;
+  color: var(--text-gray);
+  line-height: 54px;
+}
+.video_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+.video_box {
+  width: 522px;
+  height: 405px;
+  background-color: #bad4ff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.video_box video {
+  width: 100%;
+  object-fit: cover;
+}
+.video_right_text {
+  width: fit-content;
+  margin-top: 8px;
+}
+.video_right_text > span {
+  font-size: var(--md-font-size);
+  font-weight: 700;
+  color: var(--text-gray);
+}
+.video_right_text > span::before {
+  content: "";
+  font-size: 0;
+  display: inline-block;
+  width: 138px;
+  height: 1px;
+  background-color: var(--text-gray);
+  margin-right: 10px;
+}
+.video_right_text > h3 {
+  font-size: var(--lg-font-size);
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+.video_right_text p {
+  font-size: var(--md-font-size);
+  font-weight: 500;
+  color: var(--text-gray);
+}
+/* 섹션 4 캐리미 Review  */
+.sec4 {
+  padding-bottom: 112px;
+  box-sizing: border-box;
+}
+.container > p {
+  font-size: var(--md-font-size);
+  font-weight: 500;
+  color: var(--text-gray);
+}
