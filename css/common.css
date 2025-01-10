@@ -17,6 +17,12 @@ section {
 .main_color {
   color: var(--main-color);
 }
+.bar {
+  width: 2px;
+  height: 15px;
+  background-color: #777;
+  display: inline-block;
+}
 h2 {
   font-size: var(--xl-font-size);
   font-weight: 700;
@@ -114,11 +120,7 @@ header {
   display: flex;
   gap: 10px;
 }
-.right_text span {
-  width: 2px;
-  height: 15px;
-  background-color: #777;
-}
+
 .right_text a:hover {
   font-weight: bold;
 }
