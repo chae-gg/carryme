@@ -292,3 +292,57 @@
   height: 120px;
   background-color: #eff5ff;
 }
+/* 섹션 6 캐리미 new */
+.sec6 {
+  padding: 120px 0;
+  box-sizing: border-box;
+}
+.table_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.table_box {
+  width: 612px;
+  height: auto;
+}
+.table_title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #222;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  margin-top: 84px;
+}
+.table_title > h3 {
+  font-size: var(--md-font-size);
+  font-weight: 700;
+}
+.table_title > p {
+  font-size: var(--sm-font-size);
+  font-weight: 600;
+}
+.table_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 8px;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+}
+.table_text p:nth-child(1) {
+  font-weight: 500;
+  color: var(--text-gray);
+}
+.table_text p:nth-child(2) {
+  font-weight: 600;
+  color: var(--text-sub-dark);
+  /* margin-right: auto;
+  margin-left: 34px; */
+}
+.table_text p:nth-child(3) {
+  font-size: var(--xs-font-size);
+  font-weight: 400;
+}
+.xi-angle-down {
+  font-size: 16px;
+}
