@@ -2,8 +2,65 @@
 @import url("./reset.css");
 @import url("./common.css");
 
+/* 인트로 섹션 */
+.start_sec {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-bottom: 60px;
+  display: none;
+}
+.start_visual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1000;
+}
+.start_title {
+  /* background-color: beige; */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+  text-align: center;
+}
+.start_title h2 {
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #fff;
+}
+.start_title p {
+  font-size: 68px;
+  font-weight: 700;
+  margin-top: 40px;
+  color: #fff;
+}
+.start_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.start_video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 /* 메인 비주얼 */
-.sec0 {
+.main_sec {
   margin-top: 120px;
 }
 .main_visual {
@@ -15,6 +72,12 @@
   align-items: center;
   position: relative;
   border-radius: 8px;
+  overflow: hidden;
+}
+.main_visual video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .left_text {
   /* background-color: beige; */
@@ -378,50 +441,5 @@
   display: flex;
   gap: 86px;
   margin: 0 auto;
-}
-/* 푸터  */
-footer {
-  width: 100%;
-  height: 240px;
-  background-color: #f6f6f6;
-}
-footer .container {
-  padding: 30px 0;
-  box-sizing: border-box;
-}
-.top_text_box {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 50px;
-}
-.top_text_box p {
-  font-size: var(--xs-font-size);
-  font-weight: 500;
-  color: #999;
-}
-.bottom_text_wrap {
-  display: flex;
-  justify-content: space-between;
-}
-.bottom_left_text {
-  display: flex;
-  gap: 40px;
-}
-.bottom_left_text h4 {
-  font-size: var(--xs-font-size);
-  font-weight: 600;
-  padding-bottom: 16px;
-}
-.bottom_left_text p {
-  font-size: var(--xs-font-size);
-  font-weight: 500;
-  color: #999;
-  padding-bottom: 16px;
-}
-.bottom_text_wrap > p {
-  align-self: flex-end;
-  font-size: var(--xs-font-size);
-  font-weight: 500;
-  color: #bbb;
-  margin-bottom: 16px;
+  overflow: hidden;
 }

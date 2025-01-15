@@ -7,429 +7,454 @@
     <!-- xe아이콘 적용-->
     <link
       rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <!-- css 적용 -->
     <link rel="stylesheet" href="./css/layout.css" />
   </head>
   <body>
-    <!-- 헤더 -->
-    <header>
-      <div class="hd_container">
-        <!-- 로고 -->
-        <h1>
-          <a href="/main.html">
-            <img src="./image/logo.svg" alt="로고" />
-          </a>
-        </h1>
-        <!-- 메뉴 -->
-        <nav id="gnb">
-          <!-- 1차 메뉴 -->
-          <ul>
-            <li>
-              <a href="#">이용안내</a>
-            </li>
-            <li>
-              <a href="#">서비스</a>
-              <ul class="submenu">
-                <li><a href="#">짐 배송</a></li>
-                <li><a href="#">짐 픽업</a></li>
-                <li><a href="#">캐리미 택시</a></li>
-                <li><a href="#">짐 보관</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">소식</a>
-              <ul class="submenu">
-                <li><a href="#">지점조회</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">리뷰</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">고객센터</a>
-              <ul class="submenu">
-                <li><a href="#">1대1문의</a></li>
-                <li><a href="#">자주묻는질문</a></li>
-                <li><a href="#">단체이용문의</a></li>
-                <li><a href="#">불편사항접수</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <!-- 회원가입,로그인 -->
-        <div class="right_text">
-          <a href="#">보관물 조회</a>
-          <span class="bar"></span>
-          <a href="#">회원가입</a>
-          <a href="#">로그인</a>
+    <!-- 인트로 섹션  -->
+    <section class="start_sec">
+      <div class="start_visual">
+        <div class="start_title">
+          <h2>여행의 편안함을</h2>
+          <p>캐리 미 와 함께 해보세요.</p>
+        </div>
+        <div class="start_video">
+          <video src="./image/video/forest04.mp4" autoplay muted loop></video>
         </div>
       </div>
-    </header>
-    <main>
-      <!-- 메인 비주얼 -->
-      <section class="sec0">
-        <div class="container">
-          <div class="main_visual">
-            <div class="left_text">
-              <h2>
-                지금 바로 지점 예약 하고<br />
-                기다림 없이 바로 이용 하자!
-              </h2>
-              <p>지점 사전 예약 서비스</p>
-            </div>
-            <div class="right_image">
-              <img src="./image/main_visual/main_visual_bg01.svg" alt="배경" />
-              <img
-                src="./image/main_visual/main_visual_01.svg"
-                alt="기차사진"
-              />
-            </div>
+    </section>
+    <div class="wrapper">
+      <!-- 헤더 -->
+      <header>
+        <div class="hd_container">
+          <!-- 로고 -->
+          <h1>
+            <a href="/main.html">
+              <img src="./image/logo.svg" alt="로고" />
+            </a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav id="gnb">
+            <!-- 1차 메뉴 -->
+            <ul>
+              <li>
+                <a href="#">이용안내</a>
+              </li>
+              <li>
+                <a href="#">서비스</a>
+                <ul class="submenu">
+                  <li><a href="#">짐 배송</a></li>
+                  <li><a href="#">짐 픽업</a></li>
+                  <li><a href="#">캐리미 택시</a></li>
+                  <li><a href="#">짐 보관</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">소식</a>
+                <ul class="submenu">
+                  <li><a href="#">지점조회</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">리뷰</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+                <ul class="submenu">
+                  <li><a href="#">1대1문의</a></li>
+                  <li><a href="#">자주묻는질문</a></li>
+                  <li><a href="#">단체이용문의</a></li>
+                  <li><a href="#">불편사항접수</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <!-- 회원가입,로그인 -->
+          <div class="right_text">
+            <a href="#">보관물 조회</a>
+            <span class="bar"></span>
+            <a href="#">회원가입</a>
+            <a href="#">로그인</a>
           </div>
         </div>
-      </section>
-      <!-- 섹션 1 서비스 메뉴바  -->
-      <section class="sec1">
-        <div class="container">
-          
-          <div class="menu_box_wrap">
-            <div class="box_con" src="/main.html">
-              <div class="text_wrap">
-                <h3>캐리 미 배송 서비스</h3>
-                <p>짐을 원하시는곳 까지 가져다 드려요.</p>
+      </header>
+      <main>
+        <!-- 메인 비주얼 -->
+        <section class="main_sec" id="main_sec1">
+          <div class="container">
+            <div class="main_visual">
+              <!-- <div class="left_text">
+                <h2>
+                  지금 바로 지점 예약 하고<br />
+                  기다림 없이 바로 이용 하자!
+                </h2>
+                <p>지점 사전 예약 서비스</p>
               </div>
-              <img src="./image/sec1/sec1_01.svg" alt="사진" />
-            </div>
-            <div class="box_con">
-              <div class="text_wrap">
-                <h3>캐리 미 픽업 서비스</h3>
-                <p>짐을 원하시는곳 까지 옮겨 드려요.</p>
-              </div>
-              <img src="./image/sec1/sec1_03.svg" alt="사진" />
-            </div>
-            <div class="box_con">
-              <div class="text_wrap">
-                <h3>캐리 미 택시 서비스</h3>
-                <p>짐과 함께 도착지까지 데려다 드려요.</p>
-              </div>
-              <img src="./image/sec1/sec1_02.svg" alt="사진" />
-            </div>
-            <div class="box_con">
-              <div class="text_wrap">
-                <h3>캐리 미 보관 서비스</h3>
-                <p>단기간, 장기간 짐을 보관해 드려요.</p>
-              </div>
-              <img src="./image/sec1/sec1_04.svg" alt="사진" />
+              <div class="right_image">
+                <img
+                  src="./image/main_visual/main_visual_bg01.svg"
+                  alt="배경"
+                />
+                <img
+                  src="./image/main_visual/main_visual_01.svg"
+                  alt="기차사진"
+                />
+              </div> -->
+              <video src="./image/video/sun2.mp4" autoplay muted loop></video>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- 섹션2 이런상황에 이용해보는건 어때요?-->
-      <section class="sec2">
-        <div class="container">
-          <h2>이런 상황에 이용해보는건 어때요?</h2>
-          <div class="sec2_box_wrap">
-            <div class="sec2_box">
-              <div>
-                <img src="./image/sec2/sec2_03.svg" alt="사진" />
-              </div>
-              <h3>짐 없이 여행하고 싶을때</h3>
-            </div>
-            <!-- <img src="./image/sec2/left_right.svg" alt="왼쪽 오른쪽 버튼" /> -->
-          </div>
-        </div>
-      </section>
-      <!-- 섹션3 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다. -->
-      <section class="sec3">
-        <div class="full_con">
-          <h2>일상의 편안함을 추구하며 <br />이상적인 삶을 꿈꾸다.</h2>
-          <p>우리는 캐리 미 입니다.</p>
-          <div class="video_wrap">
-            <div class="video_box">
-              <video
-                src="./image/video/forest1.mp4"
-                muted
-                autoplay
-                loop
-              ></video>
-            </div>
-            <div class="video_right_text">
-              <span>01</span>
-              <h3><span class="main_color">편안함</span>이 스며들다.</h3>
-              <p>아름답고 빛나는 당신의 여행을 위해서</p>
-            </div>
-          </div>
-          <div class="video_wrap">
-            <div class="video_box">
-              <video src="#" muted autoplay loop></video>
-            </div>
-            <div class="video_right_text">
-              <span>01</span>
-              <h3><span class="main_color">편안함</span>이 스며들다.</h3>
-              <p>아름답고 빛나는 당신의 여행을 위해서</p>
-            </div>
-          </div>
-          <div class="video_wrap">
-            <div class="video_box">
-              <video src="#" muted autoplay loop></video>
-            </div>
-            <div class="video_right_text">
-              <span>01</span>
-              <h3><span class="main_color">편안함</span>이 스며들다.</h3>
-              <p>아름답고 빛나는 당신의 여행을 위해서</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 섹션 4 캐리미 Review  -->
-      <section class="sec4">
-        <div class="container">
-          <h2>캐리 미 Review</h2>
-          <p>캐리미를 이용해주시는 고객님들에 대한 솔직한 이야기</p>
-          <div class="btn">
-            <p><a href="#">전체 보기</a></p>
-          </div>
-          <div class="review_wrap">
-            <div class="review_box">
-              <div class="top_icon_text">
-                <div class="left_icon">
-                  <img src="./image/sec4/star.svg" alt="리뷰 별점" />
-                  <span class="bar"></span>
-                  <i class="xi-profile-o"></i>
-                  <p>bongbo***</p>
+        </section>
+        <!-- 섹션 1 서비스 메뉴바  -->
+        <section class="sec1">
+          <div class="container">
+            <div class="menu_box_wrap">
+              <div class="box_con" src="/main.html">
+                <div class="text_wrap">
+                  <h3>캐리 미 배송 서비스</h3>
+                  <p>짐을 원하시는곳 까지 가져다 드려요.</p>
                 </div>
-                <p>2024.12.14</p>
+                <img src="./image/sec1/sec1_01.svg" alt="사진" />
               </div>
-              <p>
-                혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서 항상
-                걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고 너무
-                좋았습니다.
-              </p>
-            </div>
-            <div class="review_box">
-              <div class="top_icon_text">
-                <div class="left_icon">
-                  <img src="./image/sec4/star.svg" alt="리뷰 별점" />
-                  <span class="bar"></span>
-                  <i class="xi-profile-o"></i>
-                  <p>bongbo***</p>
+              <div class="box_con">
+                <div class="text_wrap">
+                  <h3>캐리 미 픽업 서비스</h3>
+                  <p>짐을 원하시는곳 까지 옮겨 드려요.</p>
                 </div>
-                <p>2024.12.14</p>
+                <img src="./image/sec1/sec1_03.svg" alt="사진" />
               </div>
-              <p>
-                혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서 항상
-                걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고 너무
-                좋았습니다.
-              </p>
-            </div>
-            <div class="review_box">
-              <div class="top_icon_text">
-                <div class="left_icon">
-                  <img src="./image/sec4/star.svg" alt="리뷰 별점" />
-                  <span class="bar"></span>
-                  <i class="xi-profile-o"></i>
-                  <p>bongbo***</p>
+              <div class="box_con">
+                <div class="text_wrap">
+                  <h3>캐리 미 택시 서비스</h3>
+                  <p>짐과 함께 도착지까지 데려다 드려요.</p>
                 </div>
-                <p>2024.12.14</p>
+                <img src="./image/sec1/sec1_02.svg" alt="사진" />
               </div>
-              <p>
-                혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서 항상
-                걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고 너무
-                좋았습니다.
-              </p>
-            </div>
-            <div class="review_box">
-              <div class="top_icon_text">
-                <div class="left_icon">
-                  <img src="./image/sec4/star.svg" alt="리뷰 별점" />
-                  <span class="bar"></span>
-                  <i class="xi-profile-o"></i>
-                  <p>bongbo***</p>
+              <div class="box_con">
+                <div class="text_wrap">
+                  <h3>캐리 미 보관 서비스</h3>
+                  <p>단기간, 장기간 짐을 보관해 드려요.</p>
                 </div>
-                <p>2024.12.14</p>
+                <img src="./image/sec1/sec1_04.svg" alt="사진" />
               </div>
-              <p>
-                혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서 항상
-                걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고 너무
-                좋았습니다.
-              </p>
-            </div>
-            <div class="review_box">
-              <div class="top_icon_text">
-                <div class="left_icon">
-                  <img src="./image/sec4/star.svg" alt="리뷰 별점" />
-                  <span class="bar"></span>
-                  <i class="xi-profile-o"></i>
-                  <p>bongbo***</p>
-                </div>
-                <p>2024.12.14</p>
-              </div>
-              <p>
-                혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서 항상
-                걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고 너무
-                좋았습니다.
-              </p>
-            </div>
-            <div class="review_box">
-              <div class="top_icon_text">
-                <div class="left_icon">
-                  <img src="./image/sec4/star.svg" alt="리뷰 별점" />
-                  <span class="bar"></span>
-                  <i class="xi-profile-o"></i>
-                  <p>bongbo***</p>
-                </div>
-                <p>2024.12.14</p>
-              </div>
-              <p>
-                혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서 항상
-                걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고 너무
-                좋았습니다.
-              </p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- 섹션 5 이벤트 배너 -->
-      <section class="sec5">
-        <div class="container">
-          <div class="event_baner"></div>
-        </div>
-      </section>
-      <!-- 섹션 6 캐리미 News -->
-      <section class="sec6">
-        <div class="container">
-          <h2>캐리 미 News</h2>
-          <div class="table_wrap">
-            <div class="table_box">
-              <div class="table_title">
-                <h3>공지사항</h3>
+        </section>
+        <!-- 섹션2 이런상황에 이용해보는건 어때요?-->
+        <section class="sec2">
+          <div class="container">
+            <h2>이런 상황에 이용해보는건 어때요?</h2>
+            <div class="sec2_box_wrap">
+              <div class="sec2_box">
+                <div>
+                  <img src="./image/sec2/sec2_03.svg" alt="사진" />
+                </div>
+                <h3>짐 없이 여행하고 싶을때</h3>
+              </div>
+              <!-- <img src="./image/sec2/left_right.svg" alt="왼쪽 오른쪽 버튼" /> -->
+            </div>
+          </div>
+        </section>
+        <!-- 섹션3 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다. -->
+        <section class="sec3">
+          <div class="full_con">
+            <h2>일상의 편안함을 추구하며 <br />이상적인 삶을 꿈꾸다.</h2>
+            <p>우리는 캐리 미 입니다.</p>
+            <div class="video_wrap">
+              <div class="video_box">
+                <video
+                  src="./image/video/forest1.mp4"
+                  muted
+                  autoplay
+                  loop
+                ></video>
+              </div>
+              <div class="video_right_text">
+                <span>01</span>
+                <h3><span class="main_color">편안함</span>이 스며들다.</h3>
+                <p>아름답고 빛나는 당신의 여행을 위해서</p>
+              </div>
+            </div>
+            <div class="video_wrap">
+              <div class="video_box">
+                <video src="#" muted autoplay loop></video>
+              </div>
+              <div class="video_right_text">
+                <span>01</span>
+                <h3><span class="main_color">편안함</span>이 스며들다.</h3>
+                <p>아름답고 빛나는 당신의 여행을 위해서</p>
+              </div>
+            </div>
+            <div class="video_wrap">
+              <div class="video_box">
+                <video src="#" muted autoplay loop></video>
+              </div>
+              <div class="video_right_text">
+                <span>01</span>
+                <h3><span class="main_color">편안함</span>이 스며들다.</h3>
+                <p>아름답고 빛나는 당신의 여행을 위해서</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 섹션 4 캐리미 Review  -->
+        <section class="sec4">
+          <div class="container">
+            <h2>캐리 미 Review</h2>
+            <p>캐리미를 이용해주시는 고객님들에 대한 솔직한 이야기</p>
+            <div class="btn">
+              <p><a href="#">전체 보기</a></p>
+            </div>
+            <div class="review_wrap">
+              <div class="review_box">
+                <div class="top_icon_text">
+                  <div class="left_icon">
+                    <img src="./image/sec4/star.svg" alt="리뷰 별점" />
+                    <span class="bar"></span>
+                    <i class="xi-profile-o"></i>
+                    <p>bongbo***</p>
+                  </div>
+                  <p>2024.12.14</p>
+                </div>
                 <p>
+                  혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서
+                  항상 걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고
+                  너무 좋았습니다.
+                </p>
+              </div>
+              <div class="review_box">
+                <div class="top_icon_text">
+                  <div class="left_icon">
+                    <img src="./image/sec4/star.svg" alt="리뷰 별점" />
+                    <span class="bar"></span>
+                    <i class="xi-profile-o"></i>
+                    <p>bongbo***</p>
+                  </div>
+                  <p>2024.12.14</p>
+                </div>
+                <p>
+                  혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서
+                  항상 걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고
+                  너무 좋았습니다.
+                </p>
+              </div>
+              <div class="review_box">
+                <div class="top_icon_text">
+                  <div class="left_icon">
+                    <img src="./image/sec4/star.svg" alt="리뷰 별점" />
+                    <span class="bar"></span>
+                    <i class="xi-profile-o"></i>
+                    <p>bongbo***</p>
+                  </div>
+                  <p>2024.12.14</p>
+                </div>
+                <p>
+                  혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서
+                  항상 걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고
+                  너무 좋았습니다.
+                </p>
+              </div>
+              <div class="review_box">
+                <div class="top_icon_text">
+                  <div class="left_icon">
+                    <img src="./image/sec4/star.svg" alt="리뷰 별점" />
+                    <span class="bar"></span>
+                    <i class="xi-profile-o"></i>
+                    <p>bongbo***</p>
+                  </div>
+                  <p>2024.12.14</p>
+                </div>
+                <p>
+                  혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서
+                  항상 걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고
+                  너무 좋았습니다.
+                </p>
+              </div>
+              <div class="review_box">
+                <div class="top_icon_text">
+                  <div class="left_icon">
+                    <img src="./image/sec4/star.svg" alt="리뷰 별점" />
+                    <span class="bar"></span>
+                    <i class="xi-profile-o"></i>
+                    <p>bongbo***</p>
+                  </div>
+                  <p>2024.12.14</p>
+                </div>
+                <p>
+                  혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서
+                  항상 걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고
+                  너무 좋았습니다.
+                </p>
+              </div>
+              <div class="review_box">
+                <div class="top_icon_text">
+                  <div class="left_icon">
+                    <img src="./image/sec4/star.svg" alt="리뷰 별점" />
+                    <span class="bar"></span>
+                    <i class="xi-profile-o"></i>
+                    <p>bongbo***</p>
+                  </div>
+                  <p>2024.12.14</p>
+                </div>
+                <p>
+                  혼자 여행 다니는 걸 무척 좋아합니다. 다만 운전할 줄 몰라서
+                  항상 걱정했었는데 숙소에다 물건을 가져다주시는 게 너무 놀랍고
+                  너무 좋았습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 섹션 5 이벤트 배너 -->
+        <section class="sec5">
+          <div class="container">
+            <div class="event_baner"></div>
+          </div>
+        </section>
+        <!-- 섹션 6 캐리미 News -->
+        <section class="sec6">
+          <div class="container">
+            <h2>캐리 미 News</h2>
+            <div class="table_wrap">
+              <div class="table_box">
+                <div class="table_title">
+                  <h3>공지사항</h3>
+                  <p>
+                    <a href="#"> 전체 보기 </a>
+                  </p>
+                </div>
+                <div class="left_text_wrap">
+                  <div class="table_text">
+                    <p><a href="#">[제주지점]</a></p>
+                    <p>
+                      <a href="#"
+                        >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                      >
+                    </p>
+                    <p><a href="#">2024.12.21</a></p>
+                  </div>
+                  <div class="table_text">
+                    <p><a href="#">[제주지점]</a></p>
+                    <p>
+                      <a href="#"
+                        >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                      >
+                    </p>
+                    <p><a href="#">2024.12.21</a></p>
+                  </div>
+                  <div class="table_text">
+                    <p><a href="#">[제주지점]</a></p>
+                    <p>
+                      <a href="#"
+                        >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                      >
+                    </p>
+                    <p><a href="#">2024.12.21</a></p>
+                  </div>
+                  <div class="table_text">
+                    <p><a href="#">[제주지점]</a></p>
+                    <p>
+                      <a href="#"
+                        >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                      >
+                    </p>
+                    <p><a href="#">2024.12.21</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="table_box">
+                <div class="table_title">
+                  <h3>공지사항</h3>
+                  <p>
+                    <a href="#"> 전체 보기 </a>
+                  </p>
+                </div>
+                <div class="table_text">
+                  <p>
+                    <a href="#"
+                      >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                    >
+                  </p>
                   <a href="#">
-                    전체 보기
+                    <i class="xi-angle-down"></i>
                   </a>
-                </p>
-              </div>
-             <div class="left_text_wrap">
-              <div class="table_text">
-                <p><a href="#">[제주지점]</a></p>
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <p><a href="#">2024.12.21</a></p>
-              </div>
-              <div class="table_text">
-                <p><a href="#">[제주지점]</a></p>
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <p><a href="#">2024.12.21</a></p>
-              </div>
-              <div class="table_text">
-                <p><a href="#">[제주지점]</a></p>
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <p><a href="#">2024.12.21</a></p>
-              </div>
-              <div class="table_text">
-                <p><a href="#">[제주지점]</a></p>
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <p><a href="#">2024.12.21</a></p>
-              </div>
-            </div>
-            </div>
-            <div class="table_box">
-              <div class="table_title">
-                <h3>공지사항</h3>
-                <p>
+                </div>
+                <div class="table_text">
+                  <p>
+                    <a href="#"
+                      >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                    >
+                  </p>
                   <a href="#">
-                    전체 보기
+                    <i class="xi-angle-down"></i>
                   </a>
-                </p>
-              </div>
-              <div class="table_text">
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <a href="#">
-                  <i class="xi-angle-down" ></i>
-                </a>
-              </div>
-              <div class="table_text" >
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <a href="#">
-                  <i class="xi-angle-down" ></i>
-                </a>
-              </div>
-              <div class="table_text">
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <a href="#">
-                  <i class="xi-angle-down" ></i>
-                </a>
-              </div>
-              <div class="table_text" >
-                <p>
-                  <a href="#">12월24일, 25일 예약 초과로 인한 예약 마감 안내</a>
-                </p>
-                <a href="#">
-                  <i class="xi-angle-down" ></i>
-                </a>
-              </div>
-             
+                </div>
+                <div class="table_text">
+                  <p>
+                    <a href="#"
+                      >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                    >
+                  </p>
+                  <a href="#">
+                    <i class="xi-angle-down"></i>
+                  </a>
+                </div>
+                <div class="table_text">
+                  <p>
+                    <a href="#"
+                      >12월24일, 25일 예약 초과로 인한 예약 마감 안내</a
+                    >
+                  </p>
+                  <a href="#">
+                    <i class="xi-angle-down"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- 섹션7 캐리미와 함께하는 파트너  -->
-       <section class="sec7">
-
+        </section>
+        <!-- 섹션7 캐리미와 함께하는 파트너  -->
+        <section class="sec7">
           <h2>캐리 미와 함께하는 파트너</h2>
           <div class="img_wrap">
-            <img src="./image/partner_logo/banner-img1.png" alt="">
-            <img src="./image/partner_logo/banner-img2.png" alt="">
-            <img src="./image/partner_logo/banner-img3.png" alt="">
-            <img src="./image/partner_logo/banner-img4.png" alt="">
-            <img src="./image/partner_logo/banner-img5.png" alt="">
-            <img src="./image/partner_logo/banner-img6.png" alt="">
-            <img src="./image/partner_logo/banner-img7.png" alt="">
+            <img src="./image/partner_logo/banner-img1.png" alt="" />
+            <img src="./image/partner_logo/banner-img2.png" alt="" />
+            <img src="./image/partner_logo/banner-img3.png" alt="" />
+            <img src="./image/partner_logo/banner-img4.png" alt="" />
+            <img src="./image/partner_logo/banner-img5.png" alt="" />
+            <img src="./image/partner_logo/banner-img6.png" alt="" />
+            <img src="./image/partner_logo/banner-img7.png" alt="" />
           </div>
-       </section>
-       <!-- 푸터  -->
-        <footer>
-          <div class="container">
-            <div class="top_text_box">
-              <p>개인정보처리방침</p>
-              <p>이용약관</p>
-              <p>고객센터</p>
-              <p>인재채용</p>
-            </div>
-            <div class="bottom_text_wrap">
-              <div class="bottom_left_text">
-                <div class="left_first_text">
-                  <h4><a href="#">캐리 미</a></h4>
-                  <p>경기도 안양시 동안구 전파로 88 신원비젼타워 4층</p>
-                  <p>사업자 번호 : 123-45-67890</p>
-                  <p>통신판매업신고번호 : 제1234-경기안양-56789</p>
-                </div>
-                <div class="left_last_text">
-                  <h4><a href="#">고객센터</a></h4>
-                  <p>평일 : 09 : 00 ~ 18 : 30</p>
-                  <p>고객센터번호 : 1577 - 8332</p>
-                </div>
+        </section>
+      </main>
+      <!-- 푸터  -->
+      <footer>
+        <div class="container">
+          <div class="top_text_box">
+            <p>개인정보처리방침</p>
+            <p>이용약관</p>
+            <p>고객센터</p>
+            <p>인재채용</p>
+          </div>
+          <div class="bottom_text_wrap">
+            <div class="bottom_left_text">
+              <div class="left_first_text">
+                <h4><a href="#">캐리 미</a></h4>
+                <p>경기도 안양시 동안구 전파로 88 신원비젼타워 4층</p>
+                <p>사업자 번호 : 123-45-67890</p>
+                <p>통신판매업신고번호 : 제1234-경기안양-56789</p>
               </div>
-              <p>&copy;Copyright.CARRY ME ALL rights reserved.</p>
+              <div class="left_last_text">
+                <h4><a href="#">고객센터</a></h4>
+                <p>평일 : 09 : 00 ~ 18 : 30</p>
+                <p>고객센터번호 : 1577 - 8332</p>
+              </div>
             </div>
-            
+            <p>&copy;Copyright.CARRY ME ALL rights reserved.</p>
           </div>
-        </footer>
-    </main>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
