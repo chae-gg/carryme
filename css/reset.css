@@ -8,7 +8,7 @@
   --text-sub-dark: #444;
   --text-gray: #777;
   /* 폰트 크기 */
-  --xl-font-size: 40px;
+  --xl-font-size: 48px;
   --lg-font-size: 32px;
   --md-font-size: 24px;
   --sm-font-size: 16px;
@@ -155,6 +155,6 @@ image {
   border: none;
   max-width: 100%;
 }
-vodeo {
+video {
   max-width: 100%;
 }
