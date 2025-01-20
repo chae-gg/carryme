@@ -48,7 +48,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  /* background-color: tomato; */
 }
 /* 로고 */
 .container > h1 > a > img {
@@ -70,7 +69,6 @@ header {
 
 #gnb > ul > li {
   position: relative;
-  /* background-color: antiquewhite; */
   width: 80px;
 }
 #gnb > ul > li > a {
