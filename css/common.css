@@ -92,7 +92,7 @@ header {
   transform-origin: 0% 50%;
 }
 
-#gnb > ul:hover > li > a {
+#gnb > ul > li:hover > a {
   font-weight: bold;
 }
 
@@ -111,7 +111,7 @@ header {
 .submenu li:hover {
   font-weight: bold;
 }
-#gnb > ul:hover > li .submenu {
+#gnb:hover > ul > li .submenu {
   height: 200px;
 }
 /* gnb 뒤에 전체 배경 */
