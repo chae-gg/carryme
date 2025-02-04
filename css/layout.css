@@ -39,11 +39,10 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 .main_title {
-  width: 1000px;
+  width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 30%;
-
+  top: 290px;
   z-index: 31;
 }
 .main_title h2 {
@@ -56,49 +55,50 @@
   color: #fff;
   font-weight: 600;
   font-size: var(--md-font-size);
+  margin-bottom: 160px;
 }
 
-.menu_box_wrap {
-  width: 100%;
+.menu_box_wraper {
+  width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 160px;
-  left: 800px;
-
+  top: 300px;
+  left: 640px;
   z-index: 30;
-  /* display: flex; */
-  align-items: center;
-  justify-content: space-between;
+}
+.box_wrap {
+  display: flex;
+  gap: 40px;
 }
 
 .text_box {
-  width: 300px;
-  height: 160px;
-  padding: 40px 0;
+  width: 360px;
+  height: 150px;
+  padding: 40px 30px;
   box-sizing: border-box;
   border-radius: 12px;
   cursor: pointer;
-  backdrop-filter: blur(6px);
-  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  background-color: rgba(250, 250, 250, 0.3);
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
   transition: 0.8s;
 }
 .text_box h3 {
-  font-size: var(--lg-font-size);
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 16px;
 }
 .text_box p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #fff;
-  margin-top: 14px;
 }
 .text_box:hover {
   background-color: #fff;
-  transform: translateY(-5%);
+  /* transform: translateY(-5%); */
   h3,
   p {
     color: #222;
@@ -107,91 +107,43 @@
 /* 섹션 2 🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
   width: 100%;
-  height: 1000px;
-  padding-top: 120px;
-  box-sizing: border-box;
+  height: 1080px;
 }
-.sec2 .container > h2 {
-  margin-bottom: 120px;
-  margin-top: 40px;
-}
-
-.sec2_box_wrap {
-  width: fit-content;
-  height: fit-content;
+.sec2 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 100px;
-  margin: 0 auto;
 }
-.sec2_box {
+.sec2_con1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sec2_left_wrap {
   width: fit-content;
   height: fit-content;
-  border-radius: 22px;
-  box-sizing: border-box;
-  text-align: center;
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #777;
+  }
 }
-.sec2_box div {
-  width: 180px;
-  height: 180px;
-  border-radius: 18px;
-  overflow: hidden;
-  /* background-color: #d9d9d9; */
-  margin: 0 auto;
-  margin-bottom: 48px;
-  /* box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.6); */
-  transition: 0.5s;
+.sec2_right_box {
+  width: 738px;
+  height: 500px;
+  border-radius: 26px;
+  background-color: #d8d8d8;
 }
-.sec2_box h3 {
-  font-size: var(--md-font-size);
-  font-weight: 600;
-  opacity: 0;
-  transition: 0.5s;
-}
-.sec2_box div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.sec2_box:nth-child(2) div {
-  width: 320px;
-  height: 320px;
-}
-.sec2_box:nth-child(2) h3 {
-  opacity: 1;
-}
-:is(.sec2_box:nth-child(1), .sec2_box:nth-child(3)) {
-  /* filter: grayscale(0.8); */
-  transition: 0.5s;
-}
-:is(
-    .sec2_box:nth-child(1),
-    .sec2_box:nth-child(2),
-    .sec2_box:nth-child(3),
-
-  ):hover {
-  filter: grayscale(0);
-}
-:is(.sec2_box:nth-child(1):hover div, .sec2_box:nth-child(3):hover div) {
-  width: 320px;
-  height: 320px;
-}
-:is(.sec2_box:nth-child(1):hover h3, .sec2_box:nth-child(3):hover h3) {
-  opacity: 1;
-}
-.sec2_box > img {
-  margin-bottom: 20px;
-}
-*/
 /* sec3 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗*/
 .sec3 {
   width: 100%;
   height: 100%;
 }
 .sec3 > .container {
-  padding: 240px 0;
+  padding-top: 240px 0;
 }
 .video_wrap {
   width: 100%;
