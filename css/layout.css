@@ -12,11 +12,7 @@
 }
 .main_visual {
   width: 100%;
-<<<<<<< HEAD
-  height: 1080px;
-=======
   height: 920px;
->>>>>>> 71d20dd09893ee1a64bb0000e26e92a7489db1e1
   display: flex;
   background-color: #bad4ff;
   justify-content: space-between;
@@ -40,13 +36,13 @@
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .main_title {
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 290px;
+  top: 25%;
   z-index: 31;
 }
 .main_title h2 {
@@ -59,50 +55,53 @@
   color: #fff;
   font-weight: 600;
   font-size: var(--md-font-size);
-  margin-bottom: 160px;
 }
 
-.menu_box_wraper {
-  width: fit-content;
+.menu_box_wrapper {
+  width: 100%;
   height: fit-content;
   position: absolute;
-  top: 300px;
-  left: 640px;
+  bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
   z-index: 30;
 }
-.box_wrap {
-  display: flex;
-  gap: 40px;
-}
-
 .text_box {
-  width: 360px;
-  height: 150px;
-  padding: 40px 30px;
+  width: 200px;
+  height: 200px;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 100%;
   cursor: pointer;
-  backdrop-filter: blur(10px);
-  background-color: rgba(250, 250, 250, 0.3);
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
+  background-color: rgba(255, 255, 255, 0.4);
   text-align: center;
   transition: 0.8s;
 }
 .text_box h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 16px;
+  margin-top: 50px;
+}
+.text_box h3::after {
+  content: "";
+  font-size: 0;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #bbbbbb;
+  margin: 0px auto;
+  margin-top: 16px;
 }
 .text_box p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #fff;
+  margin-top: 20px;
 }
 .text_box:hover {
   background-color: #fff;
-  /* transform: translateY(-5%); */
   h3,
   p {
     color: #222;
@@ -110,37 +109,73 @@
 }
 /* 섹션 2 🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
-  width: 100%;
-  height: 1080px;
+  padding: 240px 0;
 }
-.sec2 .container {
-  display: flex;
-  align-items: center;
-}
-.sec2_con1 {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-.sec2_left_wrap {
-  width: fit-content;
+
+.swiper {
+  width: 1280px;
   height: fit-content;
-  h2 {
-    font-size: 40px;
-    font-weight: 700;
-  }
-  p {
-    font-size: 20px;
-    font-weight: 400;
+  > p {
+    font-size: 24px;
+    font-weight: 500;
     color: #777;
+    margin-bottom: 80px;
   }
 }
-.sec2_right_box {
-  width: 738px;
-  height: 500px;
-  border-radius: 26px;
-  background-color: #d8d8d8;
+.swiper-slide {
+  width: 100%;
+  height: 414px;
+  cursor: pointer;
 }
+.swiper-slide .bg_filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 14px;
+  padding: 60px;
+  box-sizing: border-box;
+  h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .hash_box {
+    display: flex;
+    gap: 14px;
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.swiper:last-child > div {
+  top: 65%;
+  margin-right: 10px;
+}
+.swiper-button-next::after {
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+.swiper:hover .swiper-button-next::after {
+  opacity: 1;
+}
+
 /* sec3 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗*/
 .sec3 {
   width: 100%;

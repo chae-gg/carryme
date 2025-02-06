@@ -4,8 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <!--  font 적용 -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+    />
     <!-- css 적용 -->
     <link rel="stylesheet" href="./css/layout.css" />
+    <!-- swiper 적용-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -15,7 +28,7 @@
           <!-- 로고 -->
           <h1>
             <a href="/main.html">
-              <img src="./image/logo.svg" alt="로고" />
+              <img src="./image/logo_white.svg" alt="로고" id="logo" />
             </a>
           </h1>
           <!-- 메뉴 -->
@@ -65,7 +78,7 @@
       </header>
       <main>
         <!-- 메인 비주얼 🚗🚗🚗🚗🚗🚗🚗-->
-        <section class="main_sec">
+        <section class="main_sec" id="main">
           <div class="main_visual">
             <div class="main_video wrap">
               <video src="./image/video/oceon07.mp4" autoplay muted loop>
@@ -78,26 +91,22 @@
                 <h2>여행은 가볍게, 짐은 캐리미!</h2>
                 <p>무거운 짐은 캐리미에 맡기고, 자유롭게 이동하세요.</p>
               </div>
-              <div class="menu_box_wraper">
-                <div class="box_wrap">
-                  <div class="text_box">
-                    <h3>배송 서비스</h3>
-                    <p>무거운 짐 없이 가볍게 맘편히</p>
-                  </div>
-                  <div class="text_box">
-                    <h3>픽업 서비스</h3>
-                    <p>원하는 장소 어디서든 간편하게</p>
-                  </div>
+              <div class="menu_box_wrapper">
+                <div class="text_box">
+                  <h3>배송 서비스</h3>
+                  <p>신속하고 정확하게</p>
                 </div>
-                <div class="box_wrap">
-                  <div class="text_box">
-                    <h3>택시 서비스</h3>
-                    <p>여행지에서도 믿을 수 있는</p>
-                  </div>
-                  <div class="text_box">
-                    <h3>보관 서비스</h3>
-                    <p>소중한 짐을 맡기고 자유롭게</p>
-                  </div>
+                <div class="text_box">
+                  <h3>픽업 서비스</h3>
+                  <p>어디서든 간편하게</p>
+                </div>
+                <div class="text_box">
+                  <h3>택시 서비스</h3>
+                  <p>안전하고 편안하게</p>
+                </div>
+                <div class="text_box">
+                  <h3>보관 서비스</h3>
+                  <p>불편없이 편리하게</p>
                 </div>
               </div>
             </div>
@@ -105,19 +114,46 @@
         </section>
         <!-- 섹션2 이런상황에 이용해보는건 어때요? 🚗🚗🚗🚗🚗🚗🚗-->
         <section class="sec2">
-          <div class="container">
-            <div class="sec2_con1">
-              <div class="sec2_left_wrap">
-                <div class="left_title">
-                  <h2>필요할때 언제든</h2>
-                  <p>짐없이 편안하게 여행하자.</p>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <h2>필요할땐 언제든</h2>
+            <p>이런 상황에 이용해보는건 어떤가요?</p>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./image/sec4/sec4_06.jpg" alt="#" />
+                <div class="bg_filter">
+                  <div class="hash_box">
+                    <p># 즐거움</p>
+                    <p># 자유롭게</p>
+                    <p># 편안하게</p>
+                  </div>
+                  <h3>짐을 보관하고 싶을때</h3>
                 </div>
-                <div class="left_bottom"></div>
               </div>
-              <div class="sec2_right_box">
-                <img src="" alt="" />
+              <div class="swiper-slide">
+                <img src="./image/sec4/sec4_06.jpg" alt="#" />
+                <div class="bg_filter">
+                  <div class="hash_box">
+                    <p># 즐거움</p>
+                    <p># 자유롭게</p>
+                    <p># 편안하게</p>
+                  </div>
+                  <h3>짐을 보관하고 싶을때</h3>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./image/sec4/sec4_06.jpg" alt="#" />
+                <div class="bg_filter">
+                  <div class="hash_box">
+                    <p># 즐거움</p>
+                    <p># 자유롭게</p>
+                    <p># 편안하게</p>
+                  </div>
+                  <h3>짐을 보관하고 싶을때</h3>
+                </div>
               </div>
             </div>
+            <div class="swiper-button-next"></div>
           </div>
         </section>
         <!-- 섹션3 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗 -->
@@ -343,7 +379,7 @@
                 </div>
                 <div class="left_text_wrap">
                   <div class="table_text">
-                    <p><a href="#">[제주지점]</a></p>
+                    <p>[제주지점]</p>
                     <div>
                       <p>
                         <a href="#"
@@ -351,10 +387,10 @@
                         >
                       </p>
                     </div>
-                    <p><a href="#">2024.12.21</a></p>
+                    <p>2024.12.21</p>
                   </div>
                   <div class="table_text">
-                    <p><a href="#">[부산지점]</a></p>
+                    <p>[부산지점]</p>
                     <div>
                       <p>
                         <a href="#"
@@ -362,10 +398,10 @@
                         >
                       </p>
                     </div>
-                    <p><a href="#">2024.12.21</a></p>
+                    <p>2024.12.21</p>
                   </div>
                   <div class="table_text">
-                    <p><a href="#">[강릉지점]</a></p>
+                    <p>[강릉지점]</p>
                     <div>
                       <p>
                         <a href="#"
@@ -373,16 +409,16 @@
                         >
                       </p>
                     </div>
-                    <p><a href="#">2024.12.21</a></p>
+                    <p>2024.12.21</p>
                   </div>
                   <div class="table_text">
-                    <p><a href="#">[서울지점]</a></p>
+                    <p>[서울지점]</p>
                     <div>
                       <p>
                         <a href="#">12월달 단기, 장기 보관 마감 안내</a>
                       </p>
                     </div>
-                    <p><a href="#">2024.12.21</a></p>
+                    <p>2024.12.21</p>
                   </div>
                 </div>
               </div>
@@ -480,5 +516,46 @@
         </div>
       </footer>
     </div>
+    <!-- js -->
+    <script>
+      // 섹션1 슬라이더
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+        },
+      });
+
+      // 헤더
+      const header = document.querySelector("header");
+      const aTags = document.querySelectorAll("a"); // 모든 a 태그 선택
+      const logo = document.querySelector("header h1 a img"); // 로고 이미지 선택
+      const section1 = document.querySelector(".main_sec");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          if (entries[0].isIntersecting) {
+            header.style.backgroundColor = ""; // 배경색 원래대로
+            // a 태그 색상 원래대로 복원
+            for (let i = 0; i < aTags.length; i++) {
+              aTags[i].style.color = ""; // 색상 원래대로
+            }
+            logo.style.filter = ""; // 로고 색상 원래대로
+          } else {
+            header.style.backgroundColor = "#fff"; // 배경색 흰색으로 변경
+            // a 태그 색상 변경
+            for (let i = 0; i < aTags.length; i++) {
+              aTags[i].style.color = "#222"; // 색상 변경
+            }
+            logo.style.filter = "invert(1)"; // 로고 색상 반전 (흰색 -> 검은색)
+          }
+        },
+        { threshold: 0 } // 0% 이상 보이면 적용
+      );
+
+      observer.observe(section1);
+    </script>
   </body>
 </html>
