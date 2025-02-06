@@ -13,12 +13,16 @@
     />
     <!-- css 적용 -->
     <link rel="stylesheet" href="./css/layout.css" />
+
     <!-- swiper 적용-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos 적용 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -88,8 +92,8 @@
             </div>
             <div class="container">
               <div class="main_title">
-                <h2>여행은 가볍게, 짐은 캐리미!</h2>
-                <p>무거운 짐은 캐리미에 맡기고, 자유롭게 이동하세요.</p>
+                <h2>여행은 가볍게, 짐은 캐리미에게</h2>
+                <p>무거운 짐은 캐리미에 맡기고, 자유로운 여행을 떠나세요.</p>
               </div>
               <div class="menu_box_wrapper">
                 <div class="text_box">
@@ -116,40 +120,45 @@
         <section class="sec2">
           <!-- Swiper -->
           <div class="swiper mySwiper">
-            <h2>필요할땐 언제든</h2>
-            <p>이런 상황에 이용해보는건 어떤가요?</p>
+            <h2>이런 상황에 이용해보는건 어떤가요?</h2>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./image/sec4/sec4_06.jpg" alt="#" />
+                <img src="./image/sec2/sec2_img01.jpg" alt="#" />
                 <div class="bg_filter">
-                  <div class="hash_box">
-                    <p># 즐거움</p>
-                    <p># 자유롭게</p>
-                    <p># 편안하게</p>
+                  <div class="sec2_text_box">
+                    <div class="hash_box">
+                      <p>안전하게 보관해 드릴게요.</p>
+                    </div>
+                    <h3>짐을 보관하고 싶을때</h3>
+                    <span><a href="#"># 장기보관</a></span>
+                    <span><a href="#"># 단기보관</a></span>
                   </div>
-                  <h3>짐을 보관하고 싶을때</h3>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./image/sec4/sec4_06.jpg" alt="#" />
+                <img src="./image/sec2/sec2_img02.jpg" alt="#" />
                 <div class="bg_filter">
-                  <div class="hash_box">
-                    <p># 즐거움</p>
-                    <p># 자유롭게</p>
-                    <p># 편안하게</p>
+                  <div class="sec2_text_box">
+                    <div class="hash_box">
+                      <p>신속하고 정확하게 가져다 드릴게요.</p>
+                    </div>
+                    <h3>짐을 옮기고 싶을때</h3>
+                    <span><a href="#"># 짐 배송</a></span>
+                    <span><a href="#"># 짐 픽업</a></span>
                   </div>
-                  <h3>짐을 보관하고 싶을때</h3>
                 </div>
               </div>
               <div class="swiper-slide">
-                <img src="./image/sec4/sec4_06.jpg" alt="#" />
+                <img src="./image/sec4/sec4_01.jpg" alt="#" />
                 <div class="bg_filter">
-                  <div class="hash_box">
-                    <p># 즐거움</p>
-                    <p># 자유롭게</p>
-                    <p># 편안하게</p>
+                  <div class="sec2_text_box">
+                    <div class="hash_box">
+                      <p>안전하고 편안하게 모실게요.</p>
+                    </div>
+                    <h3>짐을 가져갈수 없을때</h3>
+                    <span><a href="#"># 캐리미택시</a></span>
+                    <!-- <span><a href="#"></a></span> -->
                   </div>
-                  <h3>짐을 보관하고 싶을때</h3>
                 </div>
               </div>
             </div>
@@ -160,19 +169,23 @@
         <section class="sec3">
           <div class="container">
             <h2>
-              즐거움과 편안함이 가득한 공간에서, <br />여유로운 여행을
-              즐겨보세요.
+              캐리미와 함께 즐거움이 가득하고 <br />여유로운 여행을 즐겨보세요.
             </h2>
             <div class="video_wrap">
               <div class="video_box">
                 <video muted autoplay loop>
-                  <source src="./image/video/forest04.mp4" type="video/mp4" />
+                  <source src="./image/video/woman03.mp4" type="video/mp4" />
                   브라우저가 동영상을 지원하지 않습니다.
                 </video>
               </div>
-              <div class="video_right_text">
+              <div
+                class="video_right_text"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine"
+              >
                 <span>.01</span>
-                <h3><span>여행의 즐거움</span> 을 느끼다.</h3>
+                <h3>여행의 즐거움</h3>
                 <p>
                   <span
                     >여행은 새로운 세계를 만나는 순간마다 설렘이
@@ -191,13 +204,18 @@
             <div class="video_wrap">
               <div class="video_box">
                 <video muted autoplay loop>
-                  <source src="./image/video/wat.mp4" type="video/mp4" />
+                  <source src="./image/video/street01.mp4" type="video/mp4" />
                   브라우저가 동영상을 지원하지 않습니다.
                 </video>
               </div>
-              <div class="video_right_text">
+              <div
+                class="video_right_text"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine"
+              >
                 <span>.02</span>
-                <h3><span>편안한 하루</span> 가 시작되다.</h3>
+                <h3>설레는 첫걸음</h3>
                 <p>
                   <span
                     >하루의 시작은 그날의 기분을 결정짓는 중요한
@@ -215,12 +233,18 @@
             <div class="video_wrap">
               <div class="video_box">
                 <video muted autoplay loop>
-                  <source src="./image/video/room01.mp4" type="video/mp4" />
+                  <source src="./image/video/street01.mp4" type="video/mp4" />
+                  브라우저가 동영상을 지원하지 않습니다.
                 </video>
               </div>
-              <div class="video_right_text">
+              <div
+                class="video_right_text"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine"
+              >
                 <span>.03</span>
-                <h3><span>나만의 공간</span> 이 생기다.</h3>
+                <h3>나만의 공간</h3>
                 <p>
                   <span
                     >나만의 공간을 찾는 것은 어렵게 느껴질 때가 많습니다.</span
@@ -238,8 +262,7 @@
         <!-- 섹션 4 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗-->
         <section class="sec4">
           <div class="container">
-            <h2>캐리 미 리뷰</h2>
-            <p>캐리미를 이용해주시는 고객님들에 대한 솔직한 이야기</p>
+            <h2>이용해주시는 고객님들의 솔직한 후기</h2>
             <div class="btn">
               <p>
                 <a href="#">전체 보기 </a>
@@ -308,7 +331,6 @@
                     <span class="bar"></span>
                     <i class="xi-profile-o"></i>
                     <p>hammo***</p>
-                    <p>backmo***</p>
                   </div>
                   <p>2024.12.14</p>
                 </div>
@@ -530,32 +552,43 @@
 
       // 헤더
       const header = document.querySelector("header");
-      const aTags = document.querySelectorAll("a"); // 모든 a 태그 선택
-      const logo = document.querySelector("header h1 a img"); // 로고 이미지 선택
+      const gnb = document.querySelector("#gnb");
+      const aTags = document.querySelectorAll("a");
+      const logo = document.querySelector("header h1 a img");
       const section1 = document.querySelector(".main_sec");
 
       const observer = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) {
-            header.style.backgroundColor = ""; // 배경색 원래대로
-            // a 태그 색상 원래대로 복원
-            for (let i = 0; i < aTags.length; i++) {
-              aTags[i].style.color = ""; // 색상 원래대로
-            }
-            logo.style.filter = ""; // 로고 색상 원래대로
+            header.classList.remove("header-active");
+            header.style.backgroundColor = "";
+            aTags.forEach((a) => (a.style.color = ""));
+            logo.style.filter = "";
           } else {
-            header.style.backgroundColor = "#fff"; // 배경색 흰색으로 변경
-            // a 태그 색상 변경
-            for (let i = 0; i < aTags.length; i++) {
-              aTags[i].style.color = "#222"; // 색상 변경
-            }
-            logo.style.filter = "invert(1)"; // 로고 색상 반전 (흰색 -> 검은색)
+            header.classList.add("header-active");
+            header.style.backgroundColor = "#fff";
+            aTags.forEach((a) => (a.style.color = "#222"));
+            logo.style.filter = "invert(1)";
           }
         },
-        { threshold: 0 } // 0% 이상 보이면 적용
+        { threshold: 0.1 }
       );
 
       observer.observe(section1);
+
+      gnb.addEventListener("mouseenter", function () {
+        header.style.paddingBottom = "180px";
+        header.style.backdropFilter = "blur(10px)";
+        header.style.borderBottom = "1px solid #ccc";
+      });
+      gnb.addEventListener("mouseleave", function () {
+        header.style.paddingBottom = "0px";
+        header.style.backdropFilter = "blur(0px)";
+        header.style.borderBottom = "none";
+      });
+
+      // sec3 text aos
+      AOS.init();
     </script>
   </body>
 </html>

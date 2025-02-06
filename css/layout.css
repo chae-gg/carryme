@@ -12,7 +12,7 @@
 }
 .main_visual {
   width: 100%;
-  height: 920px;
+  height: 100vh;
   display: flex;
   background-color: #bad4ff;
   justify-content: space-between;
@@ -42,7 +42,7 @@
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 25%;
+  top: 30%;
   z-index: 31;
 }
 .main_title h2 {
@@ -109,16 +109,13 @@
 }
 /* 섹션 2 🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
-  padding: 240px 0;
+  margin-top: 240px;
 }
 
 .swiper {
   width: 1280px;
   height: fit-content;
-  > p {
-    font-size: 24px;
-    font-weight: 500;
-    color: #777;
+  > h2 {
     margin-bottom: 80px;
   }
 }
@@ -127,6 +124,7 @@
   height: 414px;
   cursor: pointer;
 }
+
 .swiper-slide .bg_filter {
   width: 100%;
   height: 100%;
@@ -135,36 +133,50 @@
   left: 0;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 14px;
-  padding: 60px;
+  border-radius: 20px;
+  padding: 60px 70px;
   box-sizing: border-box;
-  h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #fff;
-  }
+  backdrop-filter: blur(2px);
+  transition: 0.3s;
+
   .hash_box {
-    display: flex;
-    gap: 14px;
     p {
-      font-size: 16px;
-      font-weight: 100;
+      font-size: 18px;
+      font-weight: 400;
       color: #fff;
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     }
   }
+  h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  span {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-right: 8px;
+  }
+}
+.swiper-slide:hover .bg_filter {
+  backdrop-filter: blur(0);
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 14px;
+  border-radius: 20px;
   object-fit: cover;
   overflow: hidden;
 }
 .swiper:last-child > div {
-  top: 65%;
+  top: 62.5%;
   margin-right: 10px;
 }
 .swiper-button-next::after {
@@ -180,24 +192,23 @@
 .sec3 {
   width: 100%;
   height: 100%;
+  margin-top: 240px;
 }
-.sec3 > .container {
-  padding-top: 240px 0;
-}
+
 .video_wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 160px;
-  margin-top: 120px;
+  gap: 120px;
+  margin-top: 70px;
 }
-.video_wrap:nth-of-type(3) .video_box video {
-  object-position: 0px -480px;
+.video_wrap:nth-of-type(1) .video_box video {
+  object-position: -90px 0px;
 }
 
 .video_box {
-  width: 600px;
-  height: 400px;
+  width: 630px;
+  height: 440px;
   background-color: #bad4ff;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -210,8 +221,9 @@
 }
 
 .video_right_text {
-  width: 460px;
+  width: 500px;
   margin-top: 48px;
+  /* background-color: #bad4ff; */
 }
 .video_right_text > span {
   font-size: var(--lg-font-size);
@@ -228,16 +240,16 @@
   margin-right: 10px;
 }
 .video_right_text > h3 {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 40px;
 }
 .video_right_text > h3 span {
-  font-size: 40px;
+  font-size: 32px;
 }
 .video_right_text p {
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.7;
   color: var(--text-gray);
@@ -249,18 +261,12 @@
 
 /* 섹션 4 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗*/
 .sec4 {
-  padding-bottom: 112px;
-  box-sizing: border-box;
+  margin-top: 240px;
 }
 .sec4 .container > h2 {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
-.sec4 .container > p {
-  font-size: var(--md-font-size);
-  font-weight: 400;
-  color: var(--text-gray);
-  margin-bottom: 60px;
-}
+
 .sec4 .btn {
   width: fit-content;
   height: fit-content;
@@ -294,10 +300,10 @@
 .review_box {
   width: 32.2%;
   height: 152px;
-  padding: 24px 24px;
+  padding: 18px 24px;
   border: 1px solid #ddd;
-  background-color: #fafafa;
-  border-radius: 6px;
+  background-color: #fbfbfb;
+  border-radius: 14px;
   box-sizing: border-box;
   transition: 0.3s;
 }
@@ -318,7 +324,6 @@
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-
   color: var(--text-sub-dark);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -329,7 +334,6 @@
 .review_box > .bottom_text > img {
   width: 100px;
   height: 60px;
-  border-radius: 4px;
   margin-right: 24px;
   object-fit: cover;
 }
@@ -358,12 +362,7 @@
 .left_icon > .bar {
   background-color: #d9d9d9;
 }
-.left_icon i {
-  font-size: 21px;
-  font-weight: 200;
-  margin-top: 2px;
-  color: #d8d8d8;
-}
+
 /* 섹션 이벤트 배너 보류 다시 작업해야함 🚗🚗🚗🚗🚗🚗🚗*/
 .event_banner {
   height: 120px;

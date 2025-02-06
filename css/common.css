@@ -37,7 +37,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .hd_container {
@@ -68,7 +68,7 @@ header {
 
 #gnb > ul > li {
   position: relative;
-  width: 70px;
+  width: 80px;
 }
 #gnb > ul > li > a {
   position: relative;
@@ -118,7 +118,7 @@ header {
   color: var(--main-color);
 }
 #gnb:hover > ul > li .submenu {
-  height: 200px;
+  height: 180px;
 }
 /* gnb 뒤에 전체 배경 */
 #gnb::after {
@@ -127,12 +127,16 @@ header {
   width: 100vw;
   height: 0;
   position: absolute;
-  top: 60px;
+  top: 70px;
   left: 0;
   transition: 0.5s;
 }
+
 #gnb:hover::after {
-  height: 220px;
+  height: 180px;
+}
+.header-active #gnb::after {
+  background-color: #fff; /* 스크롤 시 흰색 배경 */
 }
 /* 보관물 조회, 회원가입, 로그인 영역 */
 .right_text {
