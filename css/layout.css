@@ -36,7 +36,7 @@
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .main_title {
   width: fit-content;
@@ -109,15 +109,12 @@
 }
 /* 섹션 2 🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
-  margin-top: 240px;
+  margin-top: 180px;
 }
 
 .swiper {
   width: 1280px;
   height: fit-content;
-  > h2 {
-    margin-bottom: 80px;
-  }
 }
 .swiper-slide {
   width: 100%;
@@ -132,21 +129,19 @@
   top: 0;
   left: 0;
   z-index: 20;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   padding: 60px 70px;
   box-sizing: border-box;
   backdrop-filter: blur(2px);
   transition: 0.3s;
-
-  .hash_box {
-    p {
-      font-size: 18px;
-      font-weight: 400;
-      color: #fff;
-      margin-bottom: 14px;
-    }
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 14px;
   }
+
   h3 {
     font-size: 30px;
     font-weight: 600;
@@ -155,12 +150,19 @@
   }
   span {
     font-size: 14px;
-    font-weight: 500;
-    padding: 6px 14px;
+    font-weight: 400;
+    padding: 6px 12px;
     border-radius: 12px;
     box-sizing: border-box;
     background-color: #fff;
     margin-right: 8px;
+    transition: 0.3s;
+  }
+  span:hover {
+    background-color: #428dfc;
+    a {
+      color: #fff;
+    }
   }
 }
 .swiper-slide:hover .bg_filter {
@@ -181,34 +183,25 @@
 }
 .swiper-button-next::after {
   color: #fff;
-  opacity: 0;
-  transition: 0.3s;
-}
-.swiper:hover .swiper-button-next::after {
-  opacity: 1;
 }
 
 /* sec3 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗*/
 .sec3 {
   width: 100%;
   height: 100%;
-  margin-top: 240px;
+  margin-top: 180px;
 }
 
 .video_wrap {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 120px;
-  margin-top: 70px;
-}
-.video_wrap:nth-of-type(1) .video_box video {
-  object-position: -90px 0px;
+  margin-bottom: 100px;
 }
 
 .video_box {
-  width: 630px;
-  height: 440px;
+  width: 660px;
+  height: 460px;
   background-color: #bad4ff;
   border-radius: 12px;
   margin-bottom: 20px;
@@ -218,12 +211,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(1.2);
 }
-
+#frt_filter {
+  filter: brightness(1);
+}
 .video_right_text {
   width: 500px;
-  margin-top: 48px;
-  /* background-color: #bad4ff; */
+  margin-top: 40px;
 }
 .video_right_text > span {
   font-size: var(--lg-font-size);
@@ -240,10 +235,10 @@
   margin-right: 10px;
 }
 .video_right_text > h3 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 .video_right_text > h3 span {
   font-size: 32px;
@@ -262,31 +257,6 @@
 /* 섹션 4 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗*/
 .sec4 {
   margin-top: 240px;
-}
-.sec4 .container > h2 {
-  margin-bottom: 20px;
-}
-
-.sec4 .btn {
-  width: fit-content;
-  height: fit-content;
-  margin-left: auto;
-  margin-bottom: 24px;
-}
-.sec4 .btn > p {
-  width: fit-content;
-  padding: 10px 12px;
-  background-color: #fafafa;
-  border: 1px solid #ddd;
-  font-weight: 600;
-  border-radius: 5px;
-  transition: 0.5s;
-  box-sizing: border-box;
-}
-
-.sec4 .btn:hover > p {
-  background-color: #fff;
-  border-color: #ddd;
 }
 
 .review_wrap {
@@ -353,24 +323,25 @@
 .left_icon {
   display: flex;
   align-items: center;
-  gap: 14px;
 }
 .left_icon p {
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text-gray);
+  margin-left: 8px;
 }
 .left_icon > .bar {
   background-color: #d9d9d9;
+  margin: 0 14px;
 }
 
 /* 섹션 이벤트 배너 보류 다시 작업해야함 🚗🚗🚗🚗🚗🚗🚗*/
 .event_banner {
   height: 120px;
-  background-color: #eff5ff;
+  /* background-color: #eff5ff; */
 }
-/* 섹션 6 캐리미 news 🚗🚗🚗🚗🚗🚗🚗*/
+/* 섹션 6 캐리 미 소식 🚗🚗🚗🚗🚗🚗🚗*/
 .sec6 {
-  padding: 120px 0;
+  margin-top: 240px;
   box-sizing: border-box;
 }
 .table_wrap {
@@ -387,12 +358,13 @@
   border-bottom: 3px solid #222;
   padding-bottom: 16px;
   box-sizing: border-box;
-  margin-top: 84px;
+
   align-items: center;
 }
 .table_title > h3 {
   font-size: var(--md-font-size);
   font-weight: 700;
+  margin-left: 8px;
 }
 .table_title > p {
   font-size: var(--sm-font-size);
@@ -405,6 +377,7 @@
 }
 
 .table_text {
+  height: 84px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -412,54 +385,91 @@
   border-bottom: 1px solid #d9d9d9;
   box-sizing: border-box;
 }
-.table_text {
-  padding: 28px 8px;
-}
+
 .table_text div {
   width: 315px;
 }
-.table_text > div p:nth-of-type(1) > a {
-  font-weight: 700;
-  color: #222;
+.table_text div p {
+  text-align: center;
 }
-.table_box:last-child .table_text p a {
-  font-weight: 700;
+.table_text div p a {
+  font-weight: 600;
 }
-.table_text p:nth-child(1) {
-  font-weight: 500;
-  color: var(--text-sub-dark);
-}
-
-.xi-angle-down {
-  font-size: 16px;
-  font-weight: 700;
+.table_text p a {
+  font-weight: 600;
 }
 
 /* 섹션7 캐리미와 함께하는 파트너 🚗🚗🚗🚗🚗🚗🚗*/
 .sec7 {
   padding: 100px 0;
 }
-.sec7 h2 {
-  text-align: center;
-  margin-bottom: 80px;
-}
 
 .img_wrap {
-  display: flex;
-  gap: 86px;
-  margin: 0 auto;
+  width: 100%;
+  height: 88px;
   overflow: hidden;
+  position: relative;
+  background: linear-gradient(to ri);
+}
+.img_wrapper1,
+.img_wrapper2 {
+  width: max-content;
+  display: flex;
+  gap: 100px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  padding-right: 100px;
 }
 
-.img_wrap {
-  animation: brand_logo 15s linear infinite reverse;
+.img_wrapper1 {
+  animation: brand_logo1 16s linear infinite reverse;
 }
-
-@keyframes brand_logo {
+.img_wrapper2 {
+  animation: brand_logo2 16s linear infinite reverse;
+}
+@keyframes brand_logo1 {
   0% {
     transform: translateX(0%);
   }
   100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes brand_logo2 {
+  0% {
     transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.img_wrap::before,
+.img_wrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px; /* 그라디언트 너비 조절 */
+  height: 100%;
+  z-index: 2; /* 이미지 위에 배치 */
+  pointer-events: none; /* 클릭 이벤트 방지 */
+}
+
+.img_wrap::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.img_wrap::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
 }

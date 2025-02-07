@@ -26,7 +26,7 @@ h2 {
   font-size: 40px;
   font-weight: 700;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 
 /* 헤더 */
@@ -118,7 +118,7 @@ header {
   color: var(--main-color);
 }
 #gnb:hover > ul > li .submenu {
-  height: 180px;
+  height: 200px;
 }
 /* gnb 뒤에 전체 배경 */
 #gnb::after {
@@ -133,7 +133,7 @@ header {
 }
 
 #gnb:hover::after {
-  height: 180px;
+  height: 200px;
 }
 .header-active #gnb::after {
   background-color: #fff; /* 스크롤 시 흰색 배경 */
