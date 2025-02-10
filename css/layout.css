@@ -1,39 +1,27 @@
 @charset "utf-8";
 @import url("./reset.css");
 @import url("./common.css");
-html,
+/* html,
 body {
   height: 100%;
   margin: 0;
   overflow: auto;
   scroll-behavior: smooth;
 }
-body {
-  overflow: auto; /* 전체 페이지에서 하나의 스크롤바 */
-}
+
 #scroll_page {
   scroll-snap-type: y mandatory;
-  height: 100vh; /* 화면 크기만큼 높이를 설정 */
-  overflow-y: scroll; /* 세로 스크롤 가능하도록 */
-  scroll-snap-type: y mandatory; /* 세로로 스냅하도록 설정 */
+  height: 100vh; 
+  scroll-snap-type: y mandatory; 
   scroll-behavior: smooth;
   position: relative;
+  overflow-y: scroll;
 }
 #scroll_page #page {
   height: 100vh;
   scroll-snap-align: start;
-}
-#sm_scroll_page {
-  scroll-snap-type: y mandatory;
-  height: 100vh; /* 화면 크기만큼 높이를 설정 */
-  overflow-y: scroll; /* 세로 스크롤 가능하도록 */
-  scroll-snap-type: y mandatory; /* 세로로 스냅하도록 설정 */
-  scroll-behavior: smooth;
-}
-#sm_scroll_page #page {
-  height: 100%;
-  scroll-snap-align: start;
-}
+} */
+
 /* 메인 비주얼 🚗🚗🚗🚗🚗🚗🚗*/
 .main_sec {
   width: 100%;
@@ -46,9 +34,6 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: #bad4ff;
-  justify-content: space-between;
-  align-items: center;
   position: relative;
   overflow: hidden;
 }
@@ -75,8 +60,7 @@ body {
   height: fit-content;
   position: absolute;
   top: 30%;
-  left: 180px;
-
+  left: 60px;
   z-index: 31;
 }
 .main_title h2 {
@@ -111,7 +95,7 @@ body {
   transition: 0.8s;
 }
 .text_box h3 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 700;
   color: #fff;
 }
@@ -119,20 +103,20 @@ body {
   content: "";
   font-size: 0;
   display: block;
-  width: 120px;
+  width: 180px;
   height: 1px;
   background-color: #fff;
   margin: 0px auto;
   margin-top: 16px;
 }
 .text_box p {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   color: #fff;
   margin-top: 20px;
 }
 .text_box:hover {
-  transform: translateY(-5%);
+  transform: translateY(-20%);
   h3,
   p {
     color: var(--main-color);
@@ -141,31 +125,73 @@ body {
     background-color: #428dfc;
   }
 }
-
+/* sec1 자주 찾는 서비스 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗*/
+.sec1 {
+  margin-top: 120px;
+}
+.search_bar {
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.search_bar input {
+  width: 822px;
+  height: 70px;
+  border: 1px solid #d9d9d9;
+  border-radius: 28px;
+  padding: 24px 48px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 28px;
+  color: #222;
+}
+.hashtag_bar {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 14px;
+  margin: 0 auto;
+}
+.hashtag_bar p {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 14px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  transition: 0.3s;
+}
+.hashtag_bar p:hover {
+  background-color: #428dfc;
+}
+.hashtag_bar p:hover a {
+  color: #fff;
+}
 /* sec2 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
-  width: 100%;
-  height: 100vh;
-  background-color: #428dfc;
   padding-top: 160px;
 }
 .sec2 .container h2 {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 }
 .video_wrap {
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  gap: 260px;
+  justify-content: space-around;
+  gap: 250px;
   margin-bottom: 100px;
-  background-color: #ddd;
 }
 
 .video_box {
-  width: 420px;
-  height: 420px;
+  width: 500px;
+  height: 500px;
   border-radius: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 .video_box video {
@@ -176,8 +202,9 @@ body {
 }
 
 .video_right_text {
-  width: fit-content;
-  margin-top: 40px;
+  width: 550px;
+  height: fit-content;
+  margin-top: 70px;
 }
 .video_right_text > span {
   font-size: var(--lg-font-size);
@@ -191,7 +218,6 @@ body {
   width: 160px;
   height: 2px;
   background-color: var(--text-gray);
-  margin-right: 10px;
 }
 .video_right_text > h3 {
   font-size: 36px;
@@ -203,7 +229,7 @@ body {
   font-size: 32px;
 }
 .video_right_text p {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   line-height: 1.7;
   color: var(--text-gray);
@@ -213,16 +239,15 @@ body {
   font-weight: 700;
 }
 /* 섹션 3 🚗🚗🚗🚗🚗🚗🚗*/
-body {
-  overflow: auto;
-}
 .sec3 {
-  height: auto;
+  margin-top: 240px;
 }
-
 .swiper {
   width: 1280px;
-  height: auto;
+  height: 100%;
+  h2 {
+    margin-bottom: 120px;
+  }
 }
 .swiper-slide {
   width: 100%;
@@ -283,10 +308,10 @@ body {
   overflow: hidden;
 }
 .swiper:last-child > div {
-  top: 62.5%;
+  top: 65%;
   margin-right: 10px;
 }
-.swiper-button-next::after {
+.sec3 .swiper .swiper-button-next {
   color: #fff;
 }
 /* 섹션 4 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗*/
