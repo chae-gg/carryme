@@ -7,7 +7,7 @@ body {
   color: #222;
 }
 .container {
-  width: 1280px;
+  width: 65%;
   height: 100%;
   margin: 0 auto;
 }
@@ -18,8 +18,8 @@ section {
 
 .bar {
   width: 2px;
-  height: 15px;
-  background-color: #777;
+  height: 12px;
+  background-color: #fff;
   display: inline-block;
 }
 h2 {
@@ -37,11 +37,10 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  transition: 0.5s;
 }
 
 .hd_container {
-  width: 1280px;
+  width: 65%;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -143,7 +142,7 @@ header {
   width: fit-content;
   height: fit-content;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -151,9 +150,7 @@ header {
 .right_text a {
   color: #fff;
 }
-.right_text a:hover {
-  font-weight: 700;
-}
+
 /* 푸터  */
 footer {
   width: 100%;

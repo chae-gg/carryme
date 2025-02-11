@@ -23,6 +23,7 @@
     <!-- aos 적용 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./css/latout.reponsive.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -83,7 +84,7 @@
       <main>
         <div id="scroll_page">
           <!-- 메인 비주얼 🚗🚗🚗🚗🚗🚗🚗-->
-          <section class="main_sec" id="page">
+          <section class="main_sec">
             <div class="main_visual">
               <div class="main_video wrap">
                 <video src="./image/video/main_03.mp4" autoplay muted loop>
@@ -93,7 +94,10 @@
               </div>
               <div class="container">
                 <div class="main_title">
-                  <p>무거운 짐은 캐리미에 맡기고, 자유로운 여행을 떠나세요.</p>
+                  <p>
+                    무거운 짐은 캐리미에 맡기고,<br />
+                    자유로운 여행을 떠나세요.
+                  </p>
                   <h2>여행은 즐겁고 짐은 캐리미에게</h2>
                 </div>
                 <div class="menu_box_wrapper">
@@ -117,129 +121,111 @@
               </div>
             </div>
           </section>
+          <!-- 섹션 1 -->
           <section class="sec1">
             <div class="container">
-              <div class="search_bar">
-                <form action="#" method="get">
-                  <label for="search"> </label>
-                  <input
-                    type="text"
-                    id="search"
-                    name="search"
-                    placeholder="검색어를 작성해주세요."
-                  />
-                </form>
-              </div>
-              <div class="hashtag_bar">
-                <p><a href="#">자주 묻는 질문</a></p>
-                <p><a href="#">공지사항</a></p>
-                <p><a href="#">보관물 조회</a></p>
-                <p><a href="#">1대1 문의</a></p>
-                <p><a href="#">지점 조회</a></p>
-                <p><a href="#">이벤트</a></p>
-                <p><a href="#">단체이용문의</a></p>
+              <div>
+                <h2>자주 찾는 서비스</h2>
+                <div class="hashtag_bar">
+                  <p><a href="#">자주 묻는 질문</a></p>
+                  <p><a href="#">공지사항</a></p>
+                  <p><a href="#">보관물 조회</a></p>
+                  <p><a href="#">1대1 문의</a></p>
+                  <p><a href="#">지점 조회</a></p>
+                  <p><a href="#">이벤트</a></p>
+                  <p><a href="#">단체이용문의</a></p>
+                </div>
               </div>
             </div>
           </section>
+
           <!-- 섹션2 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗 -->
-          <section class="sec2" id="page">
+          <section class="sec2">
             <div class="container">
               <h2>
                 캐리미와 함께 편안함과 즐거움이 <br />가득한 여유로운 여행을
                 즐겨보세요.
               </h2>
-              <div id="sm_scroll_page">
-                <div class="video_wrap" id="sm_page">
-                  <div class="video_box">
-                    <video muted autoplay loop>
-                      <source
-                        src="./image/video/sec2_04.mp4"
-                        type="video/mp4"
-                      />
-                      브라우저가 동영상을 지원하지 않습니다.
-                    </video>
-                  </div>
-                  <div class="video_right_text">
-                    <span>.01</span>
-                    <h3>여행의 편안함</h3>
-                    <p>
-                      <span
-                        >여행에서 중요한 것은 몸과 마음이 편안한 것입니다.</span
-                      >
-                      <br />
-                      <span
-                        >무거운 짐에서 벗어나 가볍고 여유로운 이동이
-                        가능합니다.</span
-                      ><br />
-                      낯선 곳에서도 내 공간처럼 편안한 쉼을 누릴 수 있어,<br />
-                      여행의 피로를 덜고 더욱 충전된 시간을 보낼 수 있습니다.<br />
-                      <span
-                        >진정한 휴식을 위한 여행, 캐리미가 함께
-                        하겠습니다.</span
-                      >
-                    </p>
-                  </div>
+
+              <div class="video_wrap">
+                <div class="video_box">
+                  <video muted autoplay loop>
+                    <source src="./image/video/sec2_04.mp4" type="video/mp4" />
+                    브라우저가 동영상을 지원하지 않습니다.
+                  </video>
                 </div>
-                <div class="video_wrap" id="sm_page">
-                  <div class="video_box">
-                    <video muted autoplay loop>
-                      <source
-                        src="./image/video/people01.mp4"
-                        type="video/mp4"
-                      />
-                      브라우저가 동영상을 지원하지 않습니다.
-                    </video>
-                  </div>
-                  <div class="video_right_text">
-                    <span>.02</span>
-                    <h3>여행의 즐거움</h3>
-                    <p>
-                      <span
-                        >여행은 새로운 세계를 만나는 순간마다 설렘이
-                        가득합니다.</span
-                      ><br />
-                      짐을 들고 다니는 불편함은 여행의 기쁨을 가로막곤 하죠.
-                      <br />그런
-                      <span>불편함을 덜어내고, 여행의 진정한 자유</span>를
-                      선사하고,<br />
-                      두 손이 가벼워지면 마음도 자연스럽게 여유로워집니다.
-                      <br />그렇게
-                      <span
-                        >새로운 장소에서 자신만의 시간을 보낼 길 바랍니다.</span
-                      >
-                    </p>
-                  </div>
+                <div class="video_right_text">
+                  <span>.01</span>
+                  <h3>여행의 편안함</h3>
+                  <p>
+                    <span
+                      >여행에서 중요한 것은 몸과 마음이 편안한 것입니다.</span
+                    >
+                    <br />
+                    <span
+                      >무거운 짐에서 벗어나 가볍고 여유로운 이동이
+                      가능합니다.</span
+                    ><br />
+                    낯선 곳에서도 내 공간처럼 편안한 쉼을 누릴 수 있어,<br />
+                    여행의 피로를 덜고 더욱 충전된 시간을 보낼 수 있습니다.<br />
+                    <span
+                      >진정한 휴식을 위한 여행, 캐리미가 함께 하겠습니다.</span
+                    >
+                  </p>
                 </div>
-                <div class="video_wrap" id="sm_page">
-                  <div class="video_box">
-                    <video muted autoplay loop>
-                      <source
-                        src="./image/video/woman11.mp4"
-                        type="video/mp4"
-                      />
-                      브라우저가 동영상을 지원하지 않습니다.
-                    </video>
-                  </div>
-                  <div class="video_right_text">
-                    <span>.03</span>
-                    <h3>여행의 여유로움</h3>
-                    <p>
-                      <span
-                        >서두르지 않는 여행 속에서 진짜 여유를 만날 수
-                        있습니다.</span
-                      ><br />
-                      여유를 가지고 한 순간을 즐기는 것이 중요합니다.
-                      <br />
-                      <span>어디든 내가 있는 곳이 나만의 공간처럼</span>
-                      느껴지길 바라고,<br />
-                      짐 걱정 없이 언제 어디서든 나만의 공간을 느낄수 있길
-                      바랍니다.<br />
-                      <span
-                        >여행의 모든 순간이 여유로움으로 가득 하길
-                        바랍니다.</span
-                      >
-                    </p>
-                  </div>
+              </div>
+              <div class="video_wrap">
+                <div class="video_box">
+                  <video muted autoplay loop>
+                    <source src="./image/video/people01.mp4" type="video/mp4" />
+                    브라우저가 동영상을 지원하지 않습니다.
+                  </video>
+                </div>
+                <div class="video_right_text">
+                  <span>.02</span>
+                  <h3>여행의 즐거움</h3>
+                  <p>
+                    <span
+                      >여행은 새로운 세계를 만나는 순간마다 설렘이
+                      가득합니다.</span
+                    ><br />
+                    짐을 들고 다니는 불편함은 여행의 기쁨을 가로막곤 하죠.
+                    <br />그런
+                    <span>불편함을 덜어내고, 여행의 진정한 자유</span>를
+                    선사하고,<br />
+                    두 손이 가벼워지면 마음도 자연스럽게 여유로워집니다.
+                    <br />그렇게
+                    <span
+                      >새로운 장소에서 자신만의 시간을 보낼 길 바랍니다.</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="video_wrap">
+                <div class="video_box">
+                  <video muted autoplay loop>
+                    <source src="./image/video/woman11.mp4" type="video/mp4" />
+                    브라우저가 동영상을 지원하지 않습니다.
+                  </video>
+                </div>
+                <div class="video_right_text">
+                  <span>.03</span>
+                  <h3>여행의 여유로움</h3>
+                  <p>
+                    <span
+                      >서두르지 않는 여행 속에서 진짜 여유를 만날 수
+                      있습니다.</span
+                    ><br />
+                    여유를 가지고 한 순간을 즐기는 것이 중요합니다.
+                    <br />
+                    <span>어디든 내가 있는 곳이 나만의 공간처럼</span>
+                    느껴지길 바라고,<br />
+                    짐 걱정 없이 언제 어디서든 나만의 공간을 느낄수 있길
+                    바랍니다.<br />
+                    <span
+                      >여행의 모든 순간이 여유로움으로 가득 하길 바랍니다.</span
+                    >
+                  </p>
                 </div>
               </div>
             </div>
@@ -285,8 +271,18 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <img src="./image/sec4/sec4_01.jpg" alt="#" />
+                <div class="bg_filter">
+                  <div class="sec2_text_box">
+                    <p>안전하고 편안하게 모실게요.</p>
+                    <h3>짐을 가져갈수 없을때</h3>
+                    <span><a href="#"># 캐리미택시</a></span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="swiper-button-next"></div>
+            <!-- <div class="swiper-button-next"></div> -->
           </div>
         </section>
 
@@ -401,12 +397,7 @@
             </div>
           </div>
         </section>
-        <!-- 섹션 5 이벤트 배너 🚗🚗🚗🚗🚗🚗🚗-->
-        <section class="sec5">
-          <div class="container">
-            <div class="event_banner"></div>
-          </div>
-        </section>
+
         <!-- 섹션 6 캐리미 News 🚗🚗🚗🚗🚗🚗🚗-->
         <section class="sec6">
           <div class="container">
@@ -515,6 +506,7 @@
             </div>
           </div>
         </section>
+
         <!-- 섹션7 캐리미와 함께하는 파트너 🚗🚗🚗🚗🚗🚗🚗 -->
         <section class="sec7">
           <div class="container">
@@ -626,10 +618,10 @@
             delay: 3000, // 3초마다 자동 슬라이드
             disableOnInteraction: false, // 사용자가 조작해도 자동 슬라이드 유지
           },
-          // breakpoints: {
-          //   768: { slidesPerView: 2 }, // 화면 너비 768px 이상에서는 2개씩 표시
-          //   1024: { slidesPerView: 3 }, // 화면 너비 1024px 이상에서는 3개씩 표시
-          // },
+          breakpoints: {
+            768: { slidesPerView: 2 }, // 화면 너비 768px 이상에서는 2개씩 표시
+            1024: { slidesPerView: 3 }, // 화면 너비 1024px 이상에서는 3개씩 표시
+          },
         });
       });
 
@@ -639,6 +631,7 @@
       const aTags = document.querySelectorAll("header a");
       const logo = document.querySelector("header h1 a img");
       const section1 = document.querySelector(".main_sec");
+      const bar = document.querySelector(".bar");
 
       const observer = new IntersectionObserver(
         (entries) => {
@@ -647,11 +640,13 @@
             header.style.backgroundColor = "";
             aTags.forEach((a) => (a.style.color = ""));
             logo.style.filter = "";
+            bar.style.filter = "";
           } else {
             header.classList.add("header-active");
             header.style.backgroundColor = "#fff";
             aTags.forEach((a) => (a.style.color = "#222"));
             logo.style.filter = "invert(1)";
+            bar.style.filter = "invert(1)";
           }
         },
         { threshold: 0.1 }

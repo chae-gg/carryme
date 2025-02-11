@@ -1,26 +1,6 @@
 @charset "utf-8";
 @import url("./reset.css");
 @import url("./common.css");
-/* html,
-body {
-  height: 100%;
-  margin: 0;
-  overflow: auto;
-  scroll-behavior: smooth;
-}
-
-#scroll_page {
-  scroll-snap-type: y mandatory;
-  height: 100vh; 
-  scroll-snap-type: y mandatory; 
-  scroll-behavior: smooth;
-  position: relative;
-  overflow-y: scroll;
-}
-#scroll_page #page {
-  height: 100vh;
-  scroll-snap-align: start;
-} */
 
 /* 메인 비주얼 🚗🚗🚗🚗🚗🚗🚗*/
 .main_sec {
@@ -39,7 +19,7 @@ body {
 }
 .main_visual .main_video video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -48,7 +28,7 @@ body {
 }
 .bg_filter {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -59,8 +39,8 @@ body {
   width: fit-content;
   height: fit-content;
   position: absolute;
-  top: 30%;
-  left: 60px;
+  top: 25%;
+  left: 7%;
   z-index: 31;
 }
 .main_title h2 {
@@ -74,28 +54,36 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
 }
+.main_title p br {
+  display: none;
+}
 
 .menu_box_wrapper {
   width: 100%;
   height: fit-content;
   position: absolute;
-  bottom: 100px;
+  left: 0;
+  bottom: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 140px;
+  gap: 80px;
   z-index: 30;
 }
 .text_box {
-  width: fit-content;
-  height: fit-content;
-  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   cursor: pointer;
   text-align: center;
   transition: 0.8s;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .text_box h3 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 700;
   color: #fff;
 }
@@ -103,77 +91,71 @@ body {
   content: "";
   font-size: 0;
   display: block;
-  width: 180px;
+  width: 120px;
   height: 1px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
   margin: 0px auto;
   margin-top: 16px;
 }
 .text_box p {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
   color: #fff;
   margin-top: 20px;
 }
 .text_box:hover {
-  transform: translateY(-20%);
-  h3,
-  p {
-    color: var(--main-color);
-  }
-  h3::after {
-    background-color: #428dfc;
-  }
+  transform: scale(1.15) translateY(-10%);
 }
 /* sec1 자주 찾는 서비스 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗*/
 .sec1 {
-  margin-top: 120px;
+  height: 300px;
+  /* background-color: #ddd; */
 }
-.search_bar {
+
+.sec1 .container > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.sec1 .container h2 {
   width: fit-content;
-  height: fit-content;
-  margin: 0 auto;
-  margin-bottom: 24px;
-}
-.search_bar input {
-  width: 822px;
-  height: 70px;
-  border: 1px solid #d9d9d9;
-  border-radius: 28px;
-  padding: 24px 48px;
-  box-sizing: border-box;
-  outline: none;
   background-color: #fff;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
-  font-size: 28px;
-  color: #222;
+  padding: 0 24px;
+  border-radius: 24px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 .hashtag_bar {
-  width: fit-content;
+  width: 100%;
   height: fit-content;
   display: flex;
+  justify-content: center;
   gap: 14px;
   margin: 0 auto;
 }
 .hashtag_bar p {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #fff;
-  border: 1px solid #dedede;
-  border-radius: 14px;
+  border-radius: 20px;
   box-sizing: border-box;
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   font-weight: 500;
   transition: 0.3s;
+  font-size: 18px;
 }
 .hashtag_bar p:hover {
   background-color: #428dfc;
+  border: none;
 }
 .hashtag_bar p:hover a {
   color: #fff;
 }
 /* sec2 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
-  padding-top: 160px;
+  margin-top: 120px;
 }
 .sec2 .container h2 {
   margin-bottom: 120px;
@@ -182,14 +164,13 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
-  gap: 250px;
-  margin-bottom: 100px;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .video_box {
-  width: 500px;
-  height: 500px;
+  width: 440px;
+  height: 440px;
   border-radius: 100%;
   margin-bottom: 100px;
   overflow: hidden;
@@ -204,7 +185,7 @@ body {
 .video_right_text {
   width: 550px;
   height: fit-content;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .video_right_text > span {
   font-size: var(--lg-font-size);
@@ -223,11 +204,9 @@ body {
   font-size: 36px;
   font-weight: 700;
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
-.video_right_text > h3 span {
-  font-size: 32px;
-}
+
 .video_right_text p {
   font-size: 22px;
   font-weight: 500;
@@ -238,15 +217,15 @@ body {
   color: #222;
   font-weight: 700;
 }
-/* 섹션 3 🚗🚗🚗🚗🚗🚗🚗*/
+/* 섹션 3 이런상황에  이용해보는건 어떄요?🚗🚗🚗🚗🚗🚗🚗*/
 .sec3 {
-  margin-top: 240px;
+  margin-top: 120px;
 }
 .swiper {
-  width: 1280px;
+  width: 65%;
   height: 100%;
   h2 {
-    margin-bottom: 120px;
+    margin-bottom: 60px;
   }
 }
 .swiper-slide {
@@ -264,19 +243,19 @@ body {
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  padding: 60px 70px;
+  padding: 40px 40px;
   box-sizing: border-box;
   backdrop-filter: blur(2px);
   transition: 0.3s;
   p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     color: #fff;
     margin-bottom: 14px;
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 24px;
@@ -308,15 +287,18 @@ body {
   overflow: hidden;
 }
 .swiper:last-child > div {
-  top: 65%;
+  top: 70%;
   margin-right: 10px;
+}
+.swiper:last-child > div::after {
+  font-size: 36px;
 }
 .sec3 .swiper .swiper-button-next {
   color: #fff;
 }
 /* 섹션 4 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗*/
 .sec4 {
-  margin-top: 240px;
+  margin-top: 120px;
 }
 
 .review_wrap {
@@ -393,14 +375,9 @@ body {
   margin: 0 14px;
 }
 
-/* 섹션 이벤트 배너 보류 다시 작업해야함 🚗🚗🚗🚗🚗🚗🚗*/
-.event_banner {
-  height: 120px;
-  /* background-color: #eff5ff; */
-}
 /* 섹션 6 캐리 미 소식 🚗🚗🚗🚗🚗🚗🚗*/
 .sec6 {
-  margin-top: 240px;
+  margin-top: 120px;
   box-sizing: border-box;
 }
 .table_wrap {
@@ -421,18 +398,16 @@ body {
   align-items: center;
 }
 .table_title > h3 {
-  font-size: var(--md-font-size);
+  font-size: 24px;
   font-weight: 700;
-  margin-left: 8px;
 }
 .table_title > p {
-  font-size: var(--sm-font-size);
+  font-size: 18px;
   font-weight: 600;
   text-align: center;
   transition: 0.3s;
   box-sizing: border-box;
   margin-top: 8px;
-  margin-right: 8px;
 }
 
 .table_text {
@@ -440,22 +415,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 8px;
+  padding: 28px 0;
   border-bottom: 1px solid #d9d9d9;
   box-sizing: border-box;
 }
 
 .table_text div {
-  width: 315px;
+  width: fit-content;
 }
 .table_text div p {
   text-align: center;
 }
 .table_text div p a {
   font-weight: 600;
+  font-size: 18px;
 }
 .table_text p a {
   font-weight: 600;
+  font-size: 18px;
 }
 
 /* 섹션7 캐리미와 함께하는 파트너 🚗🚗🚗🚗🚗🚗🚗*/

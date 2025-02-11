@@ -1,0 +1,59 @@
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+  /* 헤더 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗*/
+  .hd_container {
+    width: 80%;
+  }
+  #gnb > ul {
+    gap: 20px;
+  }
+  /* 메인 비주얼 🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗*/
+  .main_title {
+    left: 0%;
+  }
+  .main_title h2 {
+    font-size: 40px;
+  }
+  .main_title p {
+    line-height: 1.5;
+  }
+  .main_title p br {
+    display: block;
+  }
+  .menu_box_wrapper {
+    gap: 40px;
+  }
+  .text_box {
+    width: 180px;
+    height: 180px;
+  }
+  .text_box h3 {
+    font-size: 22px;
+  }
+  /* sec2🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗 */
+
+  .video_box {
+    width: 360px;
+    height: 360px;
+  }
+  .video_right_text > span {
+    font-size: 28px;
+  }
+  .video_right_text > h3 {
+    font-size: 32px;
+  }
+  .video_right_text > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 320px) {
+}
