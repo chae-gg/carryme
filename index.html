@@ -23,6 +23,7 @@
     <!-- aos 적용 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 반응형 -->
     <link rel="stylesheet" href="./css/latout.reponsive.css" />
   </head>
   <body>
@@ -82,7 +83,7 @@
         </div>
       </header>
       <main>
-        <div id="scroll_page">
+        <div>
           <!-- 메인 비주얼 🚗🚗🚗🚗🚗🚗🚗-->
           <section class="main_sec">
             <div class="main_visual">
@@ -121,32 +122,14 @@
               </div>
             </div>
           </section>
-          <!-- 섹션 1 -->
-          <section class="sec1">
-            <div class="container">
-              <div>
-                <h2>자주 찾는 서비스</h2>
-                <div class="hashtag_bar">
-                  <p><a href="#">자주 묻는 질문</a></p>
-                  <p><a href="#">공지사항</a></p>
-                  <p><a href="#">보관물 조회</a></p>
-                  <p><a href="#">1대1 문의</a></p>
-                  <p><a href="#">지점 조회</a></p>
-                  <p><a href="#">이벤트</a></p>
-                  <p><a href="#">단체이용문의</a></p>
-                </div>
-              </div>
-            </div>
-          </section>
 
-          <!-- 섹션2 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗 -->
-          <section class="sec2">
+          <!-- 섹션1 일상의 편안함을 추구하며 이성적인 삶을 꿈꾸다.🚗🚗🚗🚗🚗🚗🚗 -->
+          <section class="sec1">
             <div class="container">
               <h2>
                 캐리미와 함께 편안함과 즐거움이 <br />가득한 여유로운 여행을
                 즐겨보세요.
               </h2>
-
               <div class="video_wrap">
                 <div class="video_box">
                   <video muted autoplay loop>
@@ -219,7 +202,7 @@
                     여유를 가지고 한 순간을 즐기는 것이 중요합니다.
                     <br />
                     <span>어디든 내가 있는 곳이 나만의 공간처럼</span>
-                    느껴지길 바라고,<br />
+                    느껴지길 바라며<br />
                     짐 걱정 없이 언제 어디서든 나만의 공간을 느낄수 있길
                     바랍니다.<br />
                     <span
@@ -231,63 +214,88 @@
             </div>
           </section>
         </div>
-        <!-- 섹션3 이런상황에 이용해보는건 어때요? 🚗🚗🚗🚗🚗🚗🚗-->
-        <section class="sec3">
+        <!-- 섹션2 이런상황에 이용해보는건 어때요? 🚗🚗🚗🚗🚗🚗🚗-->
+        <section class="sec2">
           <!-- Swiper -->
-          <div class="swiper mySwiper" class="container">
+          <div class="swiper mySwiper container">
             <h2>🧳 이런 상황에 이용해보는건 어떤가요?</h2>
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./image/sec2/sec2_img01.jpg" alt="#" />
-                <div class="bg_filter">
-                  <div class="sec2_text_box">
-                    <p>안전하게 보관해 드릴게요.</p>
-
-                    <h3>짐을 보관하고 싶을때</h3>
-                    <span><a href="#"># 장기보관</a></span>
-                    <span><a href="#"># 단기보관</a></span>
+              <div class="swiper-slide slide_wrap">
+                <div class="slide_box">
+                  <div class="slide_text">
+                    <h3>기다림 없이</h3>
+                    <p>
+                      기다릴 필요없이 <br />
+                      바로 짐을 맡길수 있어요.
+                    </p>
+                  </div>
+                  <div class="slide_img">
+                    <img src="./image/sec2/service_1.png" alt="서비스사진" />
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="./image/sec2/sec2_img02.jpg" alt="#" />
-                <div class="bg_filter">
-                  <div class="sec2_text_box">
-                    <p>신속하고 정확하게 가져다 드릴게요.</p>
-
-                    <h3>짐을 옮기고 싶을때</h3>
-                    <span><a href="#"># 짐 배송</a></span>
-                    <span><a href="#"># 짐 픽업</a></span>
+              <div class="swiper-slide slide_wrap">
+                <div class="slide_box">
+                  <div class="slide_text">
+                    <h3>당일배송</h3>
+                    <p>
+                      출발지에서 물건을 맡기면 <br />
+                      당일 도착지에서 받을수 있어요.
+                    </p>
+                  </div>
+                  <div class="slide_img">
+                    <img src="./image/sec2/service_2.png" alt="서비스사진" />
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="./image/sec4/sec4_01.jpg" alt="#" />
-                <div class="bg_filter">
-                  <div class="sec2_text_box">
-                    <p>안전하고 편안하게 모실게요.</p>
-                    <h3>짐을 가져갈수 없을때</h3>
-                    <span><a href="#"># 캐리미택시</a></span>
+              <div class="swiper-slide slide_wrap">
+                <div class="slide_box">
+                  <div class="slide_text">
+                    <h3>안심 배송</h3>
+                    <p>
+                      도착시 사진을 찍어보내드려요.<br />
+                      실시간 위치 확인이 가능해요.
+                    </p>
+                  </div>
+                  <div class="slide_img">
+                    <img src="./image/sec2/service_3.png" alt="서비스사진" />
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <img src="./image/sec4/sec4_01.jpg" alt="#" />
-                <div class="bg_filter">
-                  <div class="sec2_text_box">
-                    <p>안전하고 편안하게 모실게요.</p>
-                    <h3>짐을 가져갈수 없을때</h3>
-                    <span><a href="#"># 캐리미택시</a></span>
+              <div class="swiper-slide slide_wrap">
+                <div class="slide_box">
+                  <div class="slide_text">
+                    <h3>편리한 신청</h3>
+                    <p>
+                      스마트폰 과 PC에서 편리하게<br />
+                      예약과 당일 신청이 가능해요.
+                    </p>
+                  </div>
+                  <div class="slide_img">
+                    <img src="./image/sec2/service_4.png" alt="서비스사진" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide slide_wrap">
+                <div class="slide_box">
+                  <div class="slide_text">
+                    <h3>편안한 여행</h3>
+                    <p>
+                      예약시간에 맞게 <br />
+                      기사님이 출발지에 계세요.
+                    </p>
+                  </div>
+                  <div class="slide_img">
+                    <img src="./image/sec2/service_5.png" alt="서비스사진" />
                   </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="swiper-button-next"></div> -->
           </div>
         </section>
 
-        <!-- 섹션 4 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗-->
-        <section class="sec4">
+        <!-- 섹션 3 캐리미 Review  🚗🚗🚗🚗🚗🚗🚗-->
+        <section class="sec3">
           <div class="container">
             <h2>💬 이용해주신 고객님들의 솔직한 후기</h2>
             <div class="review_wrap">
@@ -308,6 +316,12 @@
                     놀랍고 너무 좋았습니다.
                   </p>
                 </div>
+                <!-- 하단 아이콘 영역 -->
+                <div class="bottom_icon">
+                  <p>이용자들이 좋아하는글</p>
+                  <img src="./image/sec4/heart01.svg" alt="" />
+                  <p>18</p>
+                </div>
               </div>
               <div class="review_box">
                 <div class="top_icon_text">
@@ -324,6 +338,12 @@
                     짐을 가져다 주시니까.. 여행와서 이쁜카페도 가서 시간 보낼수
                     있어서 너무 좋았습니다.
                   </p>
+                </div>
+                <!-- 하단 아이콘 영역 -->
+                <div class="bottom_icon">
+                  <p>이용자들이 좋아하는글</p>
+                  <img src="./image/sec4/heart01.svg" alt="" />
+                  <p>18</p>
                 </div>
               </div>
               <div class="review_box">
@@ -342,6 +362,12 @@
                     애용할게요!
                   </p>
                 </div>
+                <!-- 하단 아이콘 영역 -->
+                <div class="bottom_icon">
+                  <p>이용자들이 좋아하는글</p>
+                  <img src="./image/sec4/heart01.svg" alt="" />
+                  <p>18</p>
+                </div>
               </div>
               <div class="review_box">
                 <div class="top_icon_text">
@@ -358,6 +384,12 @@
                     부산 장기출장으로 짐을 많이 가져왔습니다. 출장이 끝나고
                     몇일더 있다가 갈려고하는데 이짐을 어떻게 할방법이없더군요.
                   </p>
+                </div>
+                <!-- 하단 아이콘 영역 -->
+                <div class="bottom_icon">
+                  <p>이용자들이 좋아하는글</p>
+                  <img src="./image/sec4/heart01.svg" alt="" />
+                  <p>18</p>
                 </div>
               </div>
               <div class="review_box">
@@ -376,6 +408,12 @@
                     제가 운전을 못하다보니 짐을 가지고 다녀야했는데..
                   </p>
                 </div>
+                <!-- 하단 아이콘 영역 -->
+                <div class="bottom_icon">
+                  <p>이용자들이 좋아하는글</p>
+                  <img src="./image/sec4/heart01.svg" alt="" />
+                  <p>18</p>
+                </div>
               </div>
               <div class="review_box">
                 <div class="top_icon_text">
@@ -393,13 +431,19 @@
                     이용할게요
                   </p>
                 </div>
+                <!-- 하단 아이콘 영역 -->
+                <div class="bottom_icon">
+                  <p>이용자들이 좋아하는글</p>
+                  <img src="./image/sec4/heart01.svg" alt="" />
+                  <p>18</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- 섹션 6 캐리미 News 🚗🚗🚗🚗🚗🚗🚗-->
-        <section class="sec6">
+        <!-- 섹션 4 캐리미 News 🚗🚗🚗🚗🚗🚗🚗-->
+        <section class="sec4">
           <div class="container">
             <h2>📢 캐리 미 소식</h2>
             <div class="table_wrap">
@@ -507,8 +551,8 @@
           </div>
         </section>
 
-        <!-- 섹션7 캐리미와 함께하는 파트너 🚗🚗🚗🚗🚗🚗🚗 -->
-        <section class="sec7">
+        <!-- 섹션5 캐리미와 함께하는 파트너 🚗🚗🚗🚗🚗🚗🚗 -->
+        <section class="sec5">
           <div class="container">
             <h2>🔥 캐리 미와 함께하는 파트너</h2>
             <div class="img_wrap">
@@ -605,7 +649,7 @@
         const swiper = new Swiper(".mySwiper", {
           loop: true, // 무한 루프 활성화
           spaceBetween: 20, // 슬라이드 간격
-          slidesPerView: 2, // 한 번에 보이는 슬라이드 개수
+          // slidesPerView: 2, // 한 번에 보이는 슬라이드 개수
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -619,8 +663,8 @@
             disableOnInteraction: false, // 사용자가 조작해도 자동 슬라이드 유지
           },
           breakpoints: {
-            768: { slidesPerView: 2 }, // 화면 너비 768px 이상에서는 2개씩 표시
-            1024: { slidesPerView: 3 }, // 화면 너비 1024px 이상에서는 3개씩 표시
+            768: { slidesPerView: 1 }, // 화면 너비 768px 이상에서는 1개씩 표시
+            1024: { slidesPerView: 2 }, // 화면 너비 1024px 이상에서는 2개씩 표시
           },
         });
       });

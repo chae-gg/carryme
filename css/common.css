@@ -53,14 +53,15 @@ header {
 }
 /* 1차메뉴  */
 #gnb {
-  width: fit-content;
+  width: 50%;
   height: 100%;
   text-align: center;
+  display: flex;
 }
 #gnb > ul {
   display: flex;
   line-height: 70px;
-  gap: 100px;
+  gap: 5%;
   font-weight: 500;
   transition: 0.5s;
 }
