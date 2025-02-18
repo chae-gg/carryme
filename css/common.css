@@ -7,7 +7,7 @@ body {
   color: #222;
 }
 .container {
-  width: 65%;
+  width: 1280px;
   height: 100%;
   margin: 0 auto;
 }
@@ -40,7 +40,7 @@ header {
 }
 
 .hd_container {
-  width: 65%;
+  width: 1280px;
   height: 100%;
   display: flex;
   justify-content: space-between;
@@ -142,7 +142,7 @@ header {
 .right_text {
   width: fit-content;
   height: fit-content;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   display: flex;
   align-items: center;
@@ -151,7 +151,47 @@ header {
 .right_text a {
   color: #fff;
 }
+.menu_btn {
+  width: 25px;
+  height: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.menu_btn span {
+  display: block;
+  width: 22px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.menu_btn span:first-child {
+  position: absolute;
+  top: -6px;
+  transition: 0.5s;
+}
+.menu_btn:hover span:first-child {
+  transform: rotate(45deg) translateY(3px) translateX(6px);
+}
 
+.menu_btn span:last-child {
+  position: absolute;
+  top: 6px;
+  transition: 0.5s;
+}
+.menu_btn:hover span:last-child {
+  transform: rotate(-45deg) translateY(-3px) translateX(6px);
+}
+.menu_btn span:nth-child(2) {
+  position: absolute;
+  top: 0px;
+  transition: 0.5s;
+}
+.menu_btn:hover span:nth-child(2) {
+  opacity: 0;
+}
+.menu_btn {
+  display: none;
+}
 /* 푸터  */
 footer {
   width: 100%;

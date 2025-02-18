@@ -77,8 +77,12 @@
           <div class="right_text">
             <a href="#">보관물 조회</a>
             <span class="bar"></span>
-            <a href="#">회원가입</a>
             <a href="#">로그인</a>
+            <div class="menu_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </header>
@@ -203,8 +207,7 @@
                     <br />
                     <span>어디든 내가 있는 곳이 나만의 공간처럼</span>
                     느껴지길 바라며<br />
-                    짐 걱정 없이 언제 어디서든 나만의 공간을 느낄수 있길
-                    바랍니다.<br />
+                    언제 어디서든 나만의 공간을 느낄수 있길 바랍니다.<br />
                     <span
                       >여행의 모든 순간이 여유로움으로 가득 하길 바랍니다.</span
                     >
@@ -427,7 +430,7 @@
                 <div class="bottom_text">
                   <img src="./image/sec4/sec4_02.jpg" alt="리뷰 사진" />
                   <p>
-                    짐 맡겨놓고 맘 편하게 해돋이 <br />보고왔네요 다음에도 꼭
+                    짐 맡겨놓고 맘 편하게 해돋이 보고왔네요 <br />다음에도 또
                     이용할게요
                   </p>
                 </div>
@@ -492,7 +495,7 @@
                     <p>[서울지점]</p>
                     <div>
                       <p>
-                        <a href="#">12월달 단기, 장기 보관 마감 안내</a>
+                        <a href="#">11월 17일부터 24일까지 지점사정으로 휴무</a>
                       </p>
                     </div>
                     <p>2024.12.21</p>
@@ -649,7 +652,7 @@
         const swiper = new Swiper(".mySwiper", {
           loop: true, // 무한 루프 활성화
           spaceBetween: 20, // 슬라이드 간격
-          // slidesPerView: 2, // 한 번에 보이는 슬라이드 개수
+          slidesPerView: 3, // 한 번에 보이는 슬라이드 개수
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -676,18 +679,21 @@
       const logo = document.querySelector("header h1 a img");
       const section1 = document.querySelector(".main_sec");
       const bar = document.querySelector(".bar");
+      const button = document.querySelector(".menu_btn > span");
 
       const observer = new IntersectionObserver(
         (entries) => {
           if (entries[0].isIntersecting) {
             header.classList.remove("header-active");
             header.style.backgroundColor = "";
+            button.style.backgroundColor = "";
             aTags.forEach((a) => (a.style.color = ""));
             logo.style.filter = "";
             bar.style.filter = "";
           } else {
             header.classList.add("header-active");
             header.style.backgroundColor = "#fff";
+            button.style.backgroundColor = "#222";
             aTags.forEach((a) => (a.style.color = "#222"));
             logo.style.filter = "invert(1)";
             bar.style.filter = "invert(1)";
