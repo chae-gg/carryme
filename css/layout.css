@@ -165,23 +165,19 @@
   font-size: 22px;
   font-weight: 500;
   line-height: 1.7;
-  color: var(--text-gray);
-}
-.video_right_text p span {
   color: #222;
-  font-weight: 700;
 }
+
 /* 섹션 2 이런상황에  이용해보는건 어떄요?🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗*/
 .sec2 {
   margin-top: 120px;
 }
 .swiper {
   width: 100%;
-  h2 {
-    margin-bottom: 60px;
-  }
 }
-
+.swiper h2 {
+  margin-bottom: 60px;
+}
 .slide_wrap {
   max-width: 607px;
   max-height: 340px;
