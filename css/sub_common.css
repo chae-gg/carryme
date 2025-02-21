@@ -10,6 +10,7 @@ body {
   width: 1280px;
   height: 100%;
   margin: 0 auto;
+  margin-top: 160px;
 }
 section {
   width: 100%;
@@ -19,7 +20,7 @@ section {
 .bar {
   width: 2px;
   height: 12px;
-  background-color: #fff;
+  background-color: #222;
   display: inline-block;
 }
 h2 {
@@ -37,6 +38,7 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
+  background-color: #fff;
 }
 
 .hd_container {
@@ -73,7 +75,7 @@ header {
 #gnb > ul > li > a {
   position: relative;
   overflow: hidden;
-  color: #fff;
+  color: #222;
 }
 #gnb > ul > li > a::after {
   content: "bar";
@@ -111,7 +113,7 @@ header {
   z-index: 1000;
 }
 .submenu li a {
-  color: #fff;
+  color: #222;
 }
 .submenu li:hover {
   font-weight: bold;
@@ -127,29 +129,30 @@ header {
   width: 100vw;
   height: 0;
   position: absolute;
+  background-color: #fff;
   top: 70px;
   left: 0;
   transition: 0.5s;
 }
 
 #gnb:hover::after {
-  height: 200px;
+  height: 180px;
 }
 .header-active #gnb::after {
-  background-color: #fff; /* 스크롤 시 흰색 배경 */
+  background-color: #222; /* 스크롤 시 흰색 배경 */
 }
 /* 보관물 조회, 회원가입, 로그인 영역 */
 .right_text {
   width: fit-content;
   height: fit-content;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 .right_text a {
-  color: #fff;
+  color: #222;
 }
 .menu_btn {
   width: 25px;
@@ -161,7 +164,7 @@ header {
   display: block;
   width: 22px;
   height: 3px;
-  background-color: #fff;
+  background-color: #222;
   border-radius: 20px;
 }
 .menu_btn span:first-child {
