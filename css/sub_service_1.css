@@ -20,37 +20,28 @@
   z-index: 1;
 }
 .main_visual .container {
-  width: 45%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 0;
 }
 .main_title_wrap {
-  width: 100%;
+  width: fit-content;
   height: fit-content;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin-top: 220px;
-  margin-bottom: 60px;
   z-index: 5;
 }
 
-.main_title_wrap div:last-child {
-  width: fit-content;
-  height: fit-content;
-}
-.main_title_wrap div:last-child img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .main_title {
   width: fit-content;
   height: fit-content;
   margin-top: 80px;
+  margin-bottom: 60px;
 }
 .main_title p {
   font-size: 24px;
@@ -115,7 +106,7 @@
 .button_wrap div:hover a img {
   filter: invert(1);
 }
-/* sec1 택시 및 보관 서비스는 어떻게 이용하는건가요? */
+/*  섹션1 택시 및 보관 서비스는 어떻게 이용하는건가요? */
 .sec1_text_box_wrapper {
   margin-bottom: 60px;
 }
@@ -239,7 +230,6 @@
 }
 /* 섹션 3 서비스 이용시 꼭 확인해주세요 !*/
 .sec3 {
-  width: 100%;
   height: 664px;
   background-color: #f2f2f2;
 }
@@ -248,15 +238,16 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .sec3_text_box_wrap {
   width: 100%;
   height: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 }
 .sec3_text_box {
-  width: 33.33%;
+  width: calc(33.33% - 20px);
   height: 390px;
   border: 1px solid #d9d9d9;
   border-radius: 20px;
@@ -381,10 +372,13 @@
 }
 .sec5_button a {
   display: flex;
-  font-size: 16px;
-  font-weight: 400;
+
   color: #222;
   gap: 8px;
+}
+.sec5_button a p {
+  font-size: 16px;
+  font-weight: 400;
 }
 .sec5_button img {
   width: 16px;
@@ -393,7 +387,7 @@
 .sec5_button:hover {
   background-color: #428dfc;
 }
-.sec5_button:hover a {
+.sec5_button:hover a p {
   color: #fff;
 }
 .sec5_button:hover img {

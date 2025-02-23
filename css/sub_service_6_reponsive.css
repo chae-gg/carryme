@@ -1,0 +1,287 @@
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 960px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  /* 헤더 */
+  .hd_container {
+    width: 960px;
+  }
+  /* 메인페이지 */
+  .main_visual > img:first-child {
+    left: -5%;
+  }
+  .main_visual > img + img {
+    bottom: 5%;
+  }
+  .main_title p {
+    font-size: 22px;
+  }
+  .main_title h2 {
+    font-size: 34px;
+  }
+  /* 섹션 1 캐리미 1대1 문의 */
+  .input_wrapper {
+    width: 100%;
+  }
+  /* 2번째 인풋 전화번호 */
+  .input_box:nth-child(2) .input_text {
+    display: flex;
+  }
+  .input_box:nth-child(2) .input_text .input_text_box {
+    width: 100px;
+    margin-right: 16px;
+  }
+  .input_box:nth-child(2) .input_text .input_text_box input {
+    width: 94px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .input_box:nth-child(2) .input_text > p {
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 16px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 682px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+
+  /* 헤더 */
+  .hd_container {
+    width: 682px;
+  }
+  /* 메인섹션 */
+  .main_visual > img:first-child {
+    left: -10%;
+  }
+  .main_visual > img + img {
+    bottom: 5%;
+  }
+  .main_visual .container {
+    width: 70%;
+  }
+  .main_title p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #428dfc;
+    margin-bottom: 20px;
+  }
+
+  .main_title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6;
+  }
+
+  .main_bottom > p {
+    font-size: 16px;
+  }
+  .button_wrap div {
+    padding: 10px 16px 10px 20px;
+  }
+  .button_wrap a p {
+    font-size: 16px;
+  }
+  .button_wrap a img {
+    width: 16px;
+    height: 16px;
+  }
+  /* 섹션1 */
+  .input_check_box p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 512px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+
+  /* 메인섹션 */
+  .main_title h2 {
+    text-align: start;
+  }
+  .main_visual > img:first-child {
+    left: -20%;
+    scale: 0.8;
+  }
+  .main_visual > img + img {
+    bottom: -5%;
+    right: -10%;
+    scale: 0.8;
+  }
+  .main_bottom > p {
+    padding: 16px;
+  }
+  .button_wrap div {
+    padding: 10px 16px 10px 20px;
+  }
+  .button_wrap a p {
+    font-size: 16px;
+  }
+  .button_wrap a img {
+    width: 16px;
+    height: 16px;
+  }
+  /* 섹션 1 캐리미 1대1 문의 */
+  .input_wrapper {
+    width: 100%;
+  }
+  .input_title {
+    width: 200px;
+    height: 100px;
+    border-right: 1px solid #d9d9d9;
+    text-align: center;
+  }
+  .input_title > p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100px;
+  }
+
+  .input_text_box input {
+    font-size: 16px;
+  }
+  .input_check_box p {
+    margin-right: 8px;
+  }
+
+  /* 2번째 인풋 전화번호 */
+  .input_box:nth-child(2) .input_text {
+    display: flex;
+  }
+  .input_box:nth-child(2) .input_text .input_text_box {
+    width: 60px;
+    margin-right: 16px;
+  }
+  .input_box:nth-child(2) .input_text .input_text_box input {
+    width: 54px;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 320px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  /* 메인섹션 */
+  .main_visual > img:first-child {
+    top: -10%;
+    left: -35%;
+    scale: 0.6;
+  }
+  .main_visual > img + img {
+    bottom: -15%;
+    right: -25%;
+    scale: 0.8;
+  }
+  .main_title p {
+    font-size: 18px;
+  }
+  .main_title h2 {
+    font-size: 26px;
+  }
+  /* 섹션1 1대1 문의 */
+  .input_title {
+    width: 100px;
+  }
+  .input_text {
+    width: 50%;
+    padding: 10px 20px;
+    display: block;
+  }
+  .input_text_box input {
+    margin-left: 8px;
+  }
+
+  /* 2번째 인풋 */
+  .input_box:nth-child(2) .input_text .input_text_box:not(:first-child) {
+    display: none;
+  }
+  .input_box:nth-child(2) .input_text .input_text_box {
+    margin-right: 0;
+    width: 100%;
+  }
+  .input_box:nth-child(2) .input_text .input_text_box input {
+    width: 100%;
+    text-align: start;
+    margin-left: 8px;
+  }
+  .input_box:nth-child(2) .input_text > p {
+    display: none;
+  }
+  /* 9번째 인풋 */
+  .input_box:nth-child(9) .input_text_box {
+    width: 100%;
+  }
+  .input_box:nth-child(9) .input_text_box p {
+    display: none;
+  }
+  .input_box:nth-child(9) .input_text_box span {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: 300px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  /* 메인섹션 */
+  .main_title p {
+    font-size: 20px;
+  }
+  .main_title h2 {
+    font-size: 24px;
+  }
+  .button_wrap {
+    gap: 10px;
+  }
+  .button_wrap div {
+    padding: 8px 12px 8px 14px;
+  }
+  .button_wrap a {
+    display: flex;
+    align-items: center;
+  }
+  .button_wrap a p {
+    font-size: 16px;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding-right: 8px;
+  }
+  .button_wrap a img {
+    width: 16px;
+    height: 16px;
+  }
+  /* 푸터 */
+  .top_text_box p {
+    font-size: 12px;
+  }
+  .bottom_left_text h4 {
+    font-size: 14px;
+  }
+  .bottom_left_text p {
+    font-size: 12px;
+  }
+  .bottom_text_wrap > p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,263 @@
+@charset "utf-8";
+@import url("./reset.css");
+@import url("./sub_common.css");
+
+.main_visual {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main_visual > img:first-child {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.main_visual > img + img {
+  position: absolute;
+  right: 0;
+  bottom: 0%;
+  z-index: 1;
+}
+.main_visual .container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.main_title_wrap {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 220px;
+  z-index: 5;
+}
+
+.main_title {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+.main_title p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #428dfc;
+  margin-bottom: 20px;
+}
+
+.main_title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.6;
+}
+.main_bottom {
+  width: fit-content;
+  height: fit-content;
+  z-index: 5;
+}
+.main_bottom > p {
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+  color: #777;
+  padding: 10px;
+  border-bottom: 1px solid #d1d1d1;
+  box-sizing: border-box;
+}
+.button_wrap {
+  margin-top: 24px;
+  display: flex;
+  gap: 40px;
+}
+.button_wrap div {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 24px 10px 32px;
+  border: 1px solid #888;
+  background-color: #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.button_wrap a {
+  display: flex;
+  align-items: center;
+}
+.button_wrap a p {
+  font-size: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  padding-right: 8px;
+}
+
+.button_wrap div:hover {
+  background-color: #428dfc;
+  border-color: #5797f8;
+  color: #fff;
+}
+.button_wrap div:hover a {
+  color: #fff;
+}
+.button_wrap div:hover a img {
+  filter: invert(1);
+}
+/* 섹션 1 캐리미 1대1 문의 */
+
+.input_wrapper {
+  width: 100%;
+  height: fit-content;
+}
+.input_box {
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+}
+.input_title {
+  width: 200px;
+  height: 100px;
+  border-right: 1px solid #d9d9d9;
+  text-align: center;
+}
+.input_title > p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 100px;
+}
+.input_text {
+  width: 100%;
+  padding: 25px 50px;
+}
+.input_text_box {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.input_text_box input {
+  width: fit-content;
+  outline: none;
+  border: none;
+  line-height: 48px;
+  font-size: 18px;
+  font-family: "Pretendard";
+  margin-left: 16px;
+  color: #222;
+}
+
+.input_box:first-child {
+  border-top: 3px solid #428dfc;
+}
+.input_box:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+/* 2번째 인풋 전화번호 */
+.input_box:nth-child(2) .input_text {
+  display: flex;
+}
+.input_box:nth-child(2) .input_text .input_text_box {
+  width: 126px;
+  margin-right: 16px;
+}
+.input_box:nth-child(2) .input_text .input_text_box input {
+  width: 120px;
+  text-align: center;
+  margin-left: 0;
+}
+.input_box:nth-child(2) .input_text > p {
+  font-size: 22px;
+  font-weight: 600;
+  margin-right: 16px;
+  line-height: 50px;
+}
+/* 5번째 인풋 파일첨부 */
+.input_box:nth-child(5) {
+  height: 340px;
+}
+.input_box:nth-child(5) .input_title {
+  height: 340px;
+}
+.input_box:nth-child(5) .input_title p {
+  line-height: 340px;
+}
+.input_box:nth-child(5) .input_text {
+  height: 290px;
+}
+.input_box:nth-child(5) .input_text .input_text_box {
+  height: 290px;
+}
+.input_box:nth-child(5) .input_text .input_text_box textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Pretendard";
+  outline: none;
+  border: none;
+  resize: none;
+  padding: 20px 0 0 16px;
+}
+/* 6번째 인풋 */
+
+.input_box:nth-child(6) .input_text_box {
+  width: 286px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: #d7d7d7;
+}
+
+.input_box:nth-child(6) .input_text_box p {
+  color: #777;
+  font-weight: 400;
+  line-height: 50px;
+}
+.input_box:nth-child(6) .input_text_box p::before {
+  content: "";
+  font-size: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../image/sub_servise/icon/file_icon.svg") no-repeat;
+  float: left;
+  margin-top: 16px;
+  margin-right: 8px;
+}
+.input_box:nth-child(6) .input_text_box span {
+  color: #777;
+  font-weight: 300;
+  line-height: 50px;
+}
+/* 버튼 */
+.btn_box {
+  width: fit-content;
+  margin: 0 auto;
+}
+.btn {
+  width: fit-content;
+  height: fit-content;
+  border: none;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 60px;
+  transition: 0.35;
+}
+.btn:hover {
+  background-color: #428dfc;
+  border: 1px solid#5797f8;
+  color: #fff;
+}

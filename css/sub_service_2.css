@@ -11,43 +11,37 @@
 .main_visual > img:first-child {
   position: absolute;
   top: 0;
+  z-index: 1;
 }
 .main_visual > img + img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 0%;
+  z-index: 1;
 }
 .main_visual .container {
-  width: 820px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: 0;
 }
 .main_title_wrap {
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 220px;
-  margin-bottom: 60px;
-}
-
-.main_title_wrap div:last-child {
   width: fit-content;
   height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 220px;
+  z-index: 5;
 }
-.main_title_wrap div:last-child img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+
 .main_title {
   width: fit-content;
   height: fit-content;
   margin-top: 80px;
+  margin-bottom: 60px;
 }
 .main_title p {
   font-size: 24px;
@@ -64,6 +58,7 @@
 .main_bottom {
   width: fit-content;
   height: fit-content;
+  z-index: 5;
 }
 .main_bottom > p {
   width: fit-content;
@@ -91,6 +86,7 @@
 }
 .button_wrap a {
   display: flex;
+  align-items: center;
 }
 .button_wrap a p {
   font-size: 20px;
@@ -112,16 +108,25 @@
 }
 /* sec1 배송 및 픽업 서비스는 어떻게 이용하나요? */
 
+.sec1_text_box_wrapper {
+  margin-bottom: 60px;
+}
+.sec1_text_box_wrapper > h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
 .sec1_box_wrap {
   width: 100%;
   height: fit-content;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .sec1_text_box {
-  width: 20%;
   height: 180px;
   padding: 24px;
   border: 1px solid #e2e2e2;
@@ -149,14 +154,13 @@
 
 .sec2_img_box_wrap {
   width: 100%;
-  height: auto;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
 }
 .img_box {
-  width: 20%;
+  width: calc(25% - 20px);
   height: fit-content;
   display: flex;
   flex-direction: column;
@@ -172,8 +176,12 @@
 .img_box div img {
   position: absolute;
 }
+.img_box:nth-of-type(1) div img {
+  left: 10px;
+}
 .img_box:nth-of-type(2) div img {
   bottom: 30px;
+  right: 20px;
 }
 .img_box:nth-of-type(3) div img {
   bottom: 30px;
@@ -182,7 +190,7 @@
 }
 .img_box:nth-of-type(4) div img {
   bottom: -10px;
-  left: -36px;
+  left: -15px;
 }
 .img_box h3 {
   width: fit-content;
