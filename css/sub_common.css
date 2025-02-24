@@ -39,6 +39,7 @@ header {
   left: 0;
   z-index: 999;
   background-color: #fff;
+  overflow: hidden;
 }
 
 .hd_container {

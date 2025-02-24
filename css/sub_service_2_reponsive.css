@@ -136,9 +136,7 @@
   .main_visual > img + img {
     bottom: 5%;
   }
-  .main_visual .container {
-    width: 70%;
-  }
+
   .main_title p {
     font-size: 20px;
     font-weight: 700;

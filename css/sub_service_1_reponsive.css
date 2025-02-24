@@ -108,9 +108,7 @@
   .main_visual > img + img {
     bottom: 5%;
   }
-  .main_visual .container {
-    width: 70%;
-  }
+
   .main_title p {
     font-size: 20px;
     font-weight: 700;
@@ -254,6 +252,7 @@
     width: 16px;
     height: 16px;
   }
+  /* 섹션 1 */
 
   /* 섹션 3 서비스 이용시 꼭 확인해주세요 ! */
   .sec3 .container h2 {
@@ -285,6 +284,7 @@
   h2 {
     font-size: 26px;
   }
+
   /* 메인섹션 */
   .main_visual > img:first-child {
     top: -10%;
