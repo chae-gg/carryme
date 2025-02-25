@@ -81,11 +81,9 @@
   .slide_img {
     width: 180px;
     height: 180px;
-    background-color: aqua;
     margin-right: 10px;
   }
   .slide_img img {
-    background-color: bisque;
     scale: 0.8;
   }
   /* 섹션 3 용해주신 고객님들의 솔직한 후기 🚗🚗🚗 */

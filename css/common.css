@@ -53,7 +53,7 @@ header {
 }
 /* 1차메뉴  */
 #gnb {
-  width: 50%;
+  width: fit-content;
   height: 100%;
   text-align: center;
   display: flex;
@@ -61,7 +61,7 @@ header {
 #gnb > ul {
   display: flex;
   line-height: 70px;
-  gap: 5%;
+  gap: 80px;
   font-weight: 500;
   transition: 0.5s;
 }

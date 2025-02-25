@@ -1,8 +1,4 @@
 @media screen and (max-width: 1440px) {
-  /* 헤더 */
-  .hd_container {
-    width: 960px;
-  }
   /* 메인페이지 */
   .main_visual > img:first-child {
     left: -5%;
@@ -19,10 +15,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-  /* 헤더 */
-  .hd_container {
-    width: 682px;
-  }
   /* 메인섹션 */
   .main_visual > img:first-child {
     left: -15%;
@@ -42,9 +34,7 @@
   }
 
   /* 메인섹션 */
-  .main_title h2 {
-    text-align: start;
-  }
+
   .main_visual > img:first-child {
     left: -20%;
     scale: 0.8;
@@ -114,5 +104,21 @@
     bottom: -15%;
     right: -25%;
     scale: 0.8;
+  }
+  .container h2 {
+    font-size: 28px;
+  }
+  .login_box {
+    height: 40px;
+  }
+  .login_btn_wrap button {
+    height: 40px;
+    font-size: 16px;
+  }
+  .login_bottom_btn_wrapper button {
+    height: 40px;
+  }
+  .login_bottom_btn_wrapper button p {
+    font-size: 16px;
   }
 }
