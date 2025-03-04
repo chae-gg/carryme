@@ -22,11 +22,17 @@ section {
   background-color: #fff;
   display: inline-block;
 }
+.container > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
 h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   line-height: 1.5;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 /* 헤더 */
@@ -136,7 +142,7 @@ header {
   height: 200px;
 }
 .header-active #gnb::after {
-  background-color: #fff; /* 스크롤 시 흰색 배경 */
+  background-color: #fff;
 }
 /* 보관물 조회, 회원가입, 로그인 영역 */
 .right_text {

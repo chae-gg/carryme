@@ -2,112 +2,11 @@
 @import url("./reset.css");
 @import url("./sub_common.css");
 
-.main_visual {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-.main_visual > img:first-child {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-.main_visual > img + img {
-  position: absolute;
-  right: 0;
-  bottom: 0%;
-  z-index: 1;
-}
-.main_visual .container {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0;
-}
-.main_title_wrap {
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 220px;
-  z-index: 5;
-}
-
-.main_title {
-  width: fit-content;
-  height: fit-content;
-  margin-top: 80px;
-  margin-bottom: 60px;
-}
-.main_title p {
-  font-size: 24px;
-  font-weight: 700;
-  color: #428dfc;
-  margin-bottom: 20px;
-}
-
-.main_title h2 {
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.6;
-}
-.main_bottom {
-  width: fit-content;
-  height: fit-content;
-  z-index: 5;
-}
-.main_bottom > p {
-  width: fit-content;
-  font-size: 20px;
-  font-weight: 600;
-  color: #777;
-  padding: 10px;
-  border-bottom: 1px solid #d1d1d1;
-  box-sizing: border-box;
-}
-.button_wrap {
-  margin-top: 24px;
-  display: flex;
-  gap: 40px;
-}
-.button_wrap div {
-  width: fit-content;
-  height: fit-content;
-  padding: 10px 24px 10px 32px;
-  border: 1px solid #888;
-  background-color: #fff;
-  border-radius: 50px;
-  box-sizing: border-box;
-  transition: 0.3s;
-}
-.button_wrap a {
-  display: flex;
-  align-items: center;
-}
-.button_wrap a p {
-  font-size: 20px;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-right: 8px;
-}
-
-.button_wrap div:hover {
-  background-color: #428dfc;
-  border-color: #5797f8;
-  color: #fff;
-}
-.button_wrap div:hover a {
-  color: #fff;
-}
-.button_wrap div:hover a img {
-  filter: invert(1);
-}
 /* 섹션 1 캐리미 1대1 문의 */
 
+.sec1 .container {
+  margin-top: 120px;
+}
 .input_wrapper {
   width: 100%;
   height: fit-content;

@@ -9,19 +9,7 @@
   .hd_container {
     width: 960px;
   }
-  /* 메인페이지 */
-  .main_visual > img:first-child {
-    left: -5%;
-  }
-  .main_visual > img + img {
-    bottom: 5%;
-  }
-  .main_title p {
-    font-size: 22px;
-  }
-  .main_title h2 {
-    font-size: 34px;
-  }
+
   /* 섹션 1 캐리미 1대1 문의 */
   .input_wrapper {
     width: 100%;
@@ -59,40 +47,27 @@
   .hd_container {
     width: 682px;
   }
-  /* 메인섹션 */
-  .main_visual > img:first-child {
-    left: -10%;
+  #gnb {
+    display: none;
   }
-  .main_visual > img + img {
-    bottom: 5%;
+  .right_text > a {
+    display: none;
+  }
+  .right_text > a:nth-child(4) {
+    display: block;
+  }
+  .right_text > a:nth-child(4) img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+  .right_text > span {
+    display: none;
+  }
+  .menu_btn {
+    display: block;
   }
 
-  .main_title p {
-    font-size: 20px;
-    font-weight: 700;
-    color: #428dfc;
-    margin-bottom: 20px;
-  }
-
-  .main_title h2 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 1.6;
-  }
-
-  .main_bottom > p {
-    font-size: 16px;
-  }
-  .button_wrap div {
-    padding: 10px 16px 10px 20px;
-  }
-  .button_wrap a p {
-    font-size: 16px;
-  }
-  .button_wrap a img {
-    width: 16px;
-    height: 16px;
-  }
   /* 섹션1 */
   .input_check_box p {
     font-size: 16px;
@@ -101,44 +76,21 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 512px;
+    width: 85%;
   }
   h2 {
     font-size: 28px;
   }
-
-  /* 메인섹션 */
-  .main_title h2 {
-    text-align: start;
-  }
-  .main_visual > img:first-child {
-    left: -20%;
-    scale: 0.8;
-  }
-  .main_visual > img + img {
-    bottom: -5%;
-    right: -10%;
-    scale: 0.8;
-  }
-  .main_bottom > p {
-    padding: 16px;
-  }
-  .button_wrap div {
-    padding: 10px 16px 10px 20px;
-  }
-  .button_wrap a p {
-    font-size: 16px;
-  }
-  .button_wrap a img {
-    width: 16px;
-    height: 16px;
+  /* 헤더 */
+  .hd_container {
+    width: 85%;
   }
   /* 섹션 1 캐리미 1대1 문의 */
   .input_wrapper {
     width: 100%;
   }
   .input_title {
-    width: 200px;
+    min-width: 110px;
     height: 100px;
     border-right: 1px solid #d9d9d9;
     text-align: center;
@@ -147,6 +99,11 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 100px;
+  }
+
+  .input_text {
+    display: block;
+    padding: 25px 34px;
   }
 
   .input_text_box input {
@@ -162,46 +119,37 @@
   }
   .input_box:nth-child(2) .input_text .input_text_box {
     width: 60px;
-    margin-right: 16px;
+    margin-right: 8px;
   }
   .input_box:nth-child(2) .input_text .input_text_box input {
     width: 54px;
     text-align: center;
     margin-left: 0;
   }
+  .input_box:nth-child(2) .input_text p {
+    margin-right: 8px;
+  }
+
+  .input_box:nth-child(9) .input_text_box {
+    width: 234px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
-    width: 320px;
+    width: 85%;
   }
   h2 {
-    font-size: 26px;
-  }
-  /* 메인섹션 */
-  .main_visual > img:first-child {
-    top: -10%;
-    left: -35%;
-    scale: 0.6;
-  }
-  .main_visual > img + img {
-    bottom: -15%;
-    right: -25%;
-    scale: 0.8;
-  }
-  .main_title p {
-    font-size: 18px;
-  }
-  .main_title h2 {
     font-size: 26px;
   }
   /* 섹션1 1대1 문의 */
   .input_title {
     width: 100px;
   }
+
   .input_text {
     width: 50%;
-    padding: 10px 20px;
+    padding: 10px 50px;
     display: block;
   }
   .input_text_box input {
@@ -237,37 +185,15 @@
 }
 @media screen and (max-width: 320px) {
   .container {
-    width: 300px;
+    width: 85%;
   }
   h2 {
-    font-size: 24px;
+    font-size: 22px;
   }
-  /* 메인섹션 */
-  .main_title p {
-    font-size: 20px;
-  }
-  .main_title h2 {
-    font-size: 24px;
-  }
-  .button_wrap {
-    gap: 10px;
-  }
-  .button_wrap div {
-    padding: 8px 12px 8px 14px;
-  }
-  .button_wrap a {
-    display: flex;
-    align-items: center;
-  }
-  .button_wrap a p {
-    font-size: 16px;
-    font-weight: 400;
-    box-sizing: border-box;
-    padding-right: 8px;
-  }
-  .button_wrap a img {
-    width: 16px;
-    height: 16px;
+  /*  섹션1 */
+  .input_text {
+    width: 50%;
+    padding: 10px 14px;
   }
   /* 푸터 */
   .top_text_box p {
